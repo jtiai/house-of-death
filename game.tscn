@@ -1,0 +1,95 @@
+[gd_scene load_steps=11 format=3 uid="uid://bcfgb7sm7jjar"]
+
+[ext_resource type="Texture2D" uid="uid://cna76a8sgbmw1" path="res://graphics/ui.svg" id="1_bjev2"]
+[ext_resource type="FontFile" uid="uid://cbpdw3ov8de7v" path="res://fonts/Dosis-Medium.ttf" id="2_6lpvl"]
+[ext_resource type="Script" path="res://game_manager.gd" id="3_0klhc"]
+[ext_resource type="FontFile" uid="uid://8ofnhsnrylb8" path="res://fonts/Dosis-Bold.ttf" id="3_43l77"]
+[ext_resource type="PackedScene" uid="uid://dx5k7na301wtm" path="res://rooms/rooms.tscn" id="5_6tmcx"]
+[ext_resource type="PackedScene" uid="uid://b584q3a7p81qh" path="res://commands/commands.tscn" id="5_eyrdl"]
+[ext_resource type="Script" path="res://game_daemon.gd" id="6_lnfop"]
+[ext_resource type="Script" path="res://player.gd" id="9_bocdx"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7xt82"]
+bg_color = Color(0.6, 0.6, 0.6, 0.0509804)
+draw_center = false
+border_width_bottom = 2
+border_color = Color(0.8, 0.8, 0.8, 0.364706)
+border_blend = true
+
+[sub_resource type="Theme" id="Theme_16qar"]
+LineEdit/colors/caret_color = Color(1, 0.690196, 0, 1)
+LineEdit/colors/font_color = Color(1, 0.690196, 0, 1)
+LineEdit/colors/font_placeholder_color = Color(1, 0.690196, 0, 0.6)
+LineEdit/constants/caret_width = 10
+LineEdit/font_sizes/font_size = 28
+LineEdit/fonts/font = ExtResource("2_6lpvl")
+LineEdit/styles/normal = SubResource("StyleBoxFlat_7xt82")
+RichTextLabel/colors/default_color = Color(1, 0.690196, 0, 1)
+RichTextLabel/font_sizes/normal_font_size = 28
+RichTextLabel/fonts/bold_font = ExtResource("3_43l77")
+RichTextLabel/fonts/normal_font = ExtResource("2_6lpvl")
+
+[node name="MarginContainer" type="MarginContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+self_modulate = Color(0.8, 0.8, 0.8, 1)
+layout_mode = 2
+texture = ExtResource("1_bjev2")
+
+[node name="GameManager" type="MarginContainer" parent="."]
+layout_mode = 2
+theme = SubResource("Theme_16qar")
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_top = 32
+theme_override_constants/margin_right = 32
+theme_override_constants/margin_bottom = 32
+script = ExtResource("3_0klhc")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="GameManager"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="GameManager/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 56
+
+[node name="GameText" type="RichTextLabel" parent="GameManager/VBoxContainer/MarginContainer"]
+layout_mode = 2
+bbcode_enabled = true
+scroll_following = true
+autowrap_mode = 0
+
+[node name="MarginContainer2" type="MarginContainer" parent="GameManager/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 12
+
+[node name="CommandPrompt" type="LineEdit" parent="GameManager/VBoxContainer/MarginContainer2"]
+layout_mode = 2
+placeholder_text = "Please enter a command"
+context_menu_enabled = false
+shortcut_keys_enabled = false
+middle_mouse_paste_enabled = false
+selecting_enabled = false
+deselect_on_focus_loss_enabled = false
+caret_blink = true
+
+[node name="RoomManager" parent="GameManager" instance=ExtResource("5_6tmcx")]
+
+[node name="CommandManager" parent="GameManager" instance=ExtResource("5_eyrdl")]
+
+[node name="GameDaemon" type="Node" parent="GameManager"]
+script = ExtResource("6_lnfop")
+
+[node name="Player" type="Node" parent="GameManager"]
+script = ExtResource("9_bocdx")
+
+[connection signal="text_submitted" from="GameManager/VBoxContainer/MarginContainer2/CommandPrompt" to="GameManager" method="_on_command_prompt_text_submitted"]

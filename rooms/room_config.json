@@ -1,0 +1,688 @@
+[
+	{
+
+		"id": 1,
+		"title": "Outside building",
+		"description": "You are outside a tall gloomy building. There is a door here, to the north",
+		"script": "room_01",
+		"exits": {
+			"north": 6,
+			"south": 2,
+			"east": 3,
+			"west": 4
+		},
+		"items": [
+			"closed_door",
+			"brass_door_knocker",
+			"bell_push"
+		],
+		"npcs": []
+	},
+	{
+		"id": 2,
+		"title": "Dark forest 1",
+		"description": "You are in a dark forest, full of tall and rather strange trees.",
+		"script": "room_02",
+		"exits": {
+			"north": 1,
+			"south": 2,
+			"east": 3,
+			"west": 4
+		},
+		"items": [],
+		"npcs": []
+	},
+	{
+		"id": 3,
+		"title": "Dark forest 2",
+		"description": "You are in a dark forest. It is early autumn.",
+		"script": "room_03",
+		"exits": {
+			"north": 3,
+			"south": 2,
+			"east": 3,
+			"west": 1
+		},
+		"items": [
+			"odd_leaves"
+		],
+		"npcs": []
+	},
+	{
+		"id": 4,
+		"title": "Dark forest 3",
+		"description": "You are in a dark forest, tall trees  are all around.",
+		"script": "room_04",
+		"exits": {
+			"north": 4,
+			"south": 4,
+			"east": 4,
+			"west": 1
+		},
+		"items": [],
+		"npcs": []
+	},
+	{
+		"id": 6,
+		"title": "Entrance",
+		"description": "You are inside the building. Although quite dingy, this place is certainly impressive. Passages go east-west past the exit in the south. Crumbling wooden stairs climb to the next floor.",
+		"exits": {
+			"south": 1,
+			"east": 19,
+			"west": 11,
+			"up": 25,
+			"stairs": 25,
+			"out": 1
+		},
+		"items": [],
+		"npcs": []
+	},
+	{
+		"id": 7,
+		"title": "Make-up room",
+		"description": "You are in a make-up room, and there are various uninteresting things around.",
+		"exits": {
+			"north": 11,
+			"out": 11
+		},
+		"items": [
+			"werewolf_mask"
+		],
+		"npcs": []
+	},
+	{
+		"id": 8,
+		"title": "Props room",
+		"description": "You are in a props room, and a mad axe man is here!",
+		"exits": {
+			"east": 11,
+			"out": 11
+		},
+		"items": [],
+		"npcs": []
+	},
+	{
+		"id": 9,
+		"title": "Costumes room",
+		"description": "You're in the costumes room. None of the lavish costumes remain.",
+		"exits": {
+			"east": 12,
+			"out": 12
+		},
+		"items": [
+			"diving_gear"
+		],
+		"npcs": []
+	},
+	{
+		"id": 11,
+		"title": "Corridor 1",
+		"description": "You're in a corridor that goes north and east. Rooms are to the south and west.",
+		"exits": {
+			"north": 12,
+			"south": 7,
+			"east": 6,
+			"west": 8
+		},
+		"items": [],
+		"npcs": []
+	},
+	{
+		"id": 12,
+		"title": "Corridor 2",
+		"description": "You're in a north to south corridor which has a doorway on the west.",
+		"exits": {
+			"north": 13,
+			"south": 11,
+			"west": 9
+		},
+		"items": [],
+		"npcs": []
+	},
+	{
+		"id": 13,
+		"title": "Corridor 4",
+		"description": "You're in a corridor that twists east and south. There is a doorway to the north.",
+		"exits": {
+			"north": 26,
+			"south": 12,
+			"east": 14
+		},
+		"items": [],
+		"npcs": []
+	},
+	{
+		"id": 14,
+		"title": "Corridor 5",
+		"description": "You're in a corridor that goes east/west.",
+		"exits": {
+			"east": 15,
+			"west": 13
+		},
+		"items": [],
+		"npcs": []
+	},
+	{
+		"id": 15,
+		"title": "Corridor 6",
+		"description": "You're in a corridor that twists west and south. There is a door on the east side.",
+		"exits": {
+			"east": 16,
+			"west": 14,
+			"south": 17
+		},
+		"items": [],
+		"npcs": []
+	},
+	{
+		"id": 16,
+		"title": "Kitchen",
+		"description": "You are in a kitchen, where a witch is stirring a strange mixture in a large cauldron. (The mixture is in  the cauldron, not the witch)",
+		"script": "room_16",
+		"exits": {
+			"west": 15,
+			"out": 15
+		},
+		"items": [
+			"cake",
+			"bun"
+		],
+		"npcs": [
+			"witch"
+		]
+	},
+	{
+		"id": 17,
+		"title": "Corridor 7",
+		"description": "You are in a north-south corridor. East of here lies a room labelled 'Developing Room.'",
+		"exits": {
+			"north": 15,
+			"south": 19,
+			"east": 18
+		},
+		"items": [],
+		"npcs": []
+	},
+	{
+		"id": 18,
+		"title": "Darkish room",
+		"description": "You are in a darkish room, illuminated only by a red glowing button.",
+		"script": "room_18",
+		"exits": {
+			"west": 17,
+			"out": 17
+		},
+		"items": [],
+		"npcs": []
+	},
+	{
+		"id": 19,
+		"title": "Corridor 8",
+		"description": "You're in a passage that goes around the corner, North and West. There is a doorway on the East.",
+		"exits": {
+			"north": 17,
+			"west": 6,
+			"east": 20
+		},
+		"items": [],
+		"npcs": []
+	},
+	{
+		"id": 20,
+		"title": "North of ballroom",
+		"description": "You are on the north section of a set which has been created as a ballroom, stretching out to the south. There is an western exit.",
+		"exits": {
+			"south": 21,
+			"west": 19,
+			"out": 19
+		},
+		"items": [],
+		"npcs": []
+	},
+	{
+		"id": 21,
+		"title": "Centre of ballroom",
+		"description": "You're in the centre of a grand ballroom.",
+		"script": "room_21",
+		"exits": {
+			"north": 20,
+			"south": 22
+		},
+		"items": [
+			"chandelier"
+		],
+		"npcs": []
+	},
+	{
+		"id": 22,
+		"title": "South of ballroom",
+		"description": "You're on the south side of the ballroom set. There is a doorway south of here.",
+		"exits": {
+			"north": 21,
+			"south": 23
+		},
+		"items": [],
+		"npcs": []
+	},
+	{
+		"id": 23,
+		"title": "Tank of water",
+		"description": "You are on another set, next to a tank of water, perhaps left there for some boating scene. The exit lies to the north.",
+		"exits": {
+			"north": 22
+		},
+		"items": [],
+		"npcs": []
+	},
+	{
+		"id": 24,
+		"title": "In the tank",
+		"description": "You're in a tank of water. Because the water is so dirty it is hard to discern any details. The only exit is out!",
+		"exits": {
+			"up": 23,
+			"out": 23
+		},
+		"items": [
+			"tadpole"
+		],
+		"npcs": []
+	},
+	{
+		"id": 25,
+		"title": "Halfway stairs",
+		"description": "You are now halfway up these somewhat rickety stairs. The wood is particularly rotten at this point.",
+		"script": "room_25",
+		"exits": {
+			"up": 28,
+			"down": 6
+		},
+		"items": [],
+		"npcs": []
+	},
+	{
+		"id": 26,
+		"title": "Backyard",
+		"description": "You are in the back yard. A southern doorway leads back into the building and a shed lies nearby.",
+		"exits": {
+			"south": 13,
+			"east": 27,
+			"shed": 27
+		},
+		"items": [],
+		"npcs": []
+	},
+	{
+		"id": 27,
+		"title": "Small shed",
+		"description": "You are in a small shed. There is a large cardboard box here on the ground.",
+		"exits": {
+			"west": 26,
+			"out": 26
+		},
+		"items": [],
+		"npcs": []
+	},
+	{
+		"id": 28,
+		"title": "Landing above stairs",
+		"description": "You are on the landing above the stairs. A passage goes east-west and there is a door to the north.",
+			"exits": {
+				"north": 36,
+				"east": 30,
+				"west": 34,
+				"down": 25,
+				"stairs": 25
+			},
+		"items": [],
+		"npcs": []
+	},
+	{
+		"id": 29,
+		"title": "Corridor 9",
+		"description": "You're in a corridor. Directions are north and west.",
+		"exits": {
+			"north": 30,
+			"west": 35
+		},
+		"items": [],
+		"npcs": []
+	},
+	{
+		"id": 30,
+		"title": "Corridor 10",
+		"description": "You are in a passage that goes north around a corner, south around a different corner or east into another corridor.",
+		"exits": {
+			"north": 28,
+			"south": 29,
+			"east": 31
+		},
+		"items": [],
+		"npcs": []
+	},
+	{
+		"id": 31,
+		"title": "Corridor 11",
+		"description": "You are in a corridor outside a room north and a room to the east. A westerly passage leads back out.",
+		"exits": {
+			"north": 33,
+			"east": 32,
+			"west": 30
+		},
+		"items": [],
+		"npcs": []
+	},
+	{
+		"id": 32,
+		"title": "Dusty bedroom",
+		"description": "You're in a dusty bedroom. A heavy carpet lies on the floor.",
+		"exits": {
+			"west": 31,
+			"out": 30
+		},
+		"items": [],
+		"npcs": []
+	},
+	{
+		"id": 33,
+		"title": "Keep-fit room",
+		"description": "You're in a keep-fit room. An exercisebike is fixed to the floor.",
+		"exits": {
+			"south": 31,
+			"out": 31
+		},
+		"items": [
+			"weights"
+		],
+		"npcs": []
+	},
+	{
+		"id": 34,
+		"title": "Corridor 12",
+		"description": "You're in a corridor that goes east and south.",
+		"exits": {
+			"east": 28,
+			"south": 35
+		},
+		"items": [],
+		"npcs": []
+	},
+	{
+		"id": 35,
+		"title": "Corner",
+		"description": "You're in a corner. Corridors go east and north. A stairway goes up.",
+		"exits": {
+			"north": 34,
+			"east": 29,
+			"up": 37,
+			"stairs": 37
+		},
+		"items": [],
+		"npcs": []
+	},
+	{
+		"id": 36,
+		"title": "Old bedroom",
+		"description": "You're in an old bedroom.",
+		"exits": {
+			"south": 28,
+			"out": 28
+		},
+		"items": [
+			"mattress"
+		],
+		"npcs": []
+	},
+	{
+		"id": 37,
+		"title": "South of attic",
+		"description": "You're above the stairway in the southside of the attic.",
+		"exits": {
+			"north": 38,
+			"down": 35,
+			"stairs": 35
+		},
+		"items": [],
+		"npcs": []
+	},
+	{
+		"id": 38,
+		"title": "North of attic",
+		"description": "You're in a north section of the attic. A large mirror is on the east side.",
+		"exits": {
+			"south": 37,
+			"mirror": 39
+		},
+		"items": [],
+		"npcs": []
+	},
+	{
+		"id": 39,
+		"title": "Odd room 1",
+		"description": "You're in an odd room. There are the following: A red door in the north wall,a yellow door in the east wall, and a blue door to the south. An exit lies west.",
+		"exits": {
+			"west": 38,
+			"north": 57,
+			"south": 40,
+			"east": 42
+		},
+		"items": [],
+		"npcs": []
+	},
+	{
+		"id": 40,
+		"title": "Odd room 2",
+		"description": "You are in another odd room, which hasa blue door north, a white door south and a purple door east.",
+		"exits": {
+			"north": 39,
+			"south": 41,
+			"east": 57
+		},
+		"items": [],
+		"npcs": []
+	},
+	{
+		"id": 41,
+		"title": "Narrow ledge",
+		"description": "You're outside the building on a narrow ledge which starts here and goes east.",
+		"exits": {
+			"north": 40,
+			"east": 56,
+			"down": 57
+		},
+		"items": [],
+		"npcs": []
+	},
+	{
+		"id": 42,
+		"title": "Odd room 3",
+		"description": "You are in an odd room. There is a black door to the north, a brown door to the south and a yellow door to the west.",
+		"exits": {
+			"north": 57,
+			"south": 43,
+			"west": 39
+		},
+		"items": [
+			"rusty_key"
+		],
+		"npcs": []
+	},
+	{
+		"id": 43,
+		"title": "Odd room 4",
+		"description": "You're in an odd room. A brown door lies north and a red door goes west.",
+		"exits": {
+			"north": 42,
+			"west": 39
+		},
+		"items": [],
+		"npcs": []
+	},
+	{
+		"id": 44,
+		"title": "Small room",
+		"description": "You're in a small room which has a glassless window leading out to a narrow ledge.",
+		"exits": {
+			"south": 56,
+			"window": 56
+		},
+		"items": [
+			"portrait",
+			"removed_safe"
+		],
+		"npcs": []
+	},
+	{
+		"id": 45,
+		"title": "Room w/o exits",
+		"description": "You have fallen into a room with no apparent exits. Howevar, the walls don't look entirely solid...?",
+		"exits": {},
+		"items": [],
+		"npcs": []
+	},
+	{
+		"id": 46,
+		"title": "Outside large door",
+		"description": "You are outside a large door. The onlyexits are west back to the exitless room and east through the door.",
+		"exits": {
+			"west": 45,
+			"east": 47,
+			"gate": 47
+		},
+		"items": [
+			"huge_door"
+		],
+		"npcs": []
+	},
+	{
+		"id": 47,
+		"title": "High walled room",
+		"description": "You are in a high walled room which is quite damp in places. West is a large door, and a passage takes you north.",
+		"exits": {
+			"west": 46,
+			"north": 51,
+			"gate": 46
+		},
+		"items": [
+			"bracelet"
+		],
+		"npcs": []
+	},
+	{
+		"id": 48,
+		"title": "Small room w bandage",
+		"description": "You are in a small room with the odd bandage here and there.",
+		"exits": {
+			"north": 49,
+			"out": 49
+		},
+		"items": [
+			"golden_sceptre"
+		],
+		"npcs": []
+	},
+	{
+		"id": 49,
+		"title": "Small room 2",
+		"description": "You are in a small room. A passage goes south and the exit lies north.",
+		"exits": {
+			"north": 52,
+			"south": 48,
+			"out": 52
+		},
+		"items": [],
+		"npcs": [
+			"mummy"
+		]
+	},
+	{
+		"id": 50,
+		"title": "Crypt",
+		"description": "You're in the crypt. There are pass- ages going east and west.",
+		"exits": {
+			"west": 51,
+			"east": 53
+		},
+		"items": [],
+		"npcs": [
+			"vampire"
+		]
+	},
+	{
+		"id": 51,
+		"title": "Corridor 13",
+		"description": "You are in a passage that travels north or south. A small avenue goes east.",
+		"exits": {
+			"north": 52,
+			"south": 47,
+			"east": 50
+		},
+		"items": [],
+		"npcs": []
+	},
+	{
+		"id": 52,
+		"title": "Alley",
+		"description": "You are in an east/west alley.",
+		"exits": {
+			"west": 49,
+			"east": 51
+		},
+		"items": [],
+		"npcs": []
+	},
+	{
+		"id": 53,
+		"title": "Large hairy room",
+		"description": "You're in a large hairy room, where there is only a passage going west There is a chute on the east wall.",
+		"exits": {
+			"west": 50,
+			"east": 54,
+			"chute": 54
+		},
+		"items": [],
+		"npcs": [
+			"werewolf"
+		]
+	},
+	{
+		"id": 54,
+		"title": "Large room with PANIC",
+		"description": "You're in a large room with no exits. A button marked 'PANIC' is here The walls don't budge either!",
+		"exits": {},
+		"items": [],
+		"npcs": []
+	},
+	{
+		"id": 55,
+		"title": "Redecorated room",
+		"description": "You are in a room which is being re- decorated. A number has been written on the wall: ????? There is a safe imbedded in one wall The message 'somewhere over the rain- bow (There's no place like..) has been written on the wall.",
+		"exits": {
+			"west": 50,
+			"east": 54,
+			"chute": 54
+		},
+		"items": [],
+		"npcs": []
+	},
+	{
+		"id": 56,
+		"title": "East of narrow ledge",
+		"description": "You are at the eastern extreme of the narrow ledge. A glassless window is in front of me.",
+		"exits": {
+			"north": 44,
+			"west": 41,
+			"window": 44,
+			"up": 57
+		},
+		"items": [],
+		"npcs": []
+	},
+	{
+		"id": 57,
+		"title": "Death",
+		"description": "Death",
+		"exits": {},
+		"items": [],
+		"npcs": []
+	}
+]

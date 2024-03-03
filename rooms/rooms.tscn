@@ -1,0 +1,1073 @@
+[gd_scene load_steps=160 format=3 uid="uid://dx5k7na301wtm"]
+
+[ext_resource type="Script" path="res://rooms/room_manager.gd" id="1_m75wr"]
+[ext_resource type="Script" path="res://rooms/room_01.gd" id="2_056n7"]
+[ext_resource type="Resource" uid="uid://n211mbb0yriv" path="res://items/closed_door.tres" id="3_6siwh"]
+[ext_resource type="Resource" uid="uid://cixs37eqhhw2c" path="res://items/brass_door_knocker.tres" id="4_4aq5i"]
+[ext_resource type="Resource" uid="uid://dkus5q532rnoi" path="res://items/bell_push.tres" id="5_v754j"]
+[ext_resource type="Script" path="res://resources/room_exit.gd" id="6_phmq8"]
+[ext_resource type="Script" path="res://rooms/generic_room.gd" id="7_4busx"]
+[ext_resource type="Script" path="res://rooms/room_02.gd" id="7_peixe"]
+[ext_resource type="Script" path="res://rooms/room_25.gd" id="8_ckcba"]
+[ext_resource type="Script" path="res://rooms/room_03.gd" id="8_v0k1c"]
+[ext_resource type="Script" path="res://rooms/room_04.gd" id="9_4sduk"]
+[ext_resource type="Script" path="res://rooms/room_18.gd" id="11_163ne"]
+[ext_resource type="Script" path="res://rooms/room_21.gd" id="12_xoxls"]
+[ext_resource type="Script" path="res://rooms/room_23.gd" id="13_ipvr6"]
+
+[sub_resource type="Resource" id="Resource_n3y5j"]
+script = ExtResource("6_phmq8")
+direction = "north"
+target_room = NodePath("../Room06")
+
+[sub_resource type="Resource" id="Resource_hjpga"]
+script = ExtResource("6_phmq8")
+direction = "south"
+target_room = NodePath("../Room02")
+
+[sub_resource type="Resource" id="Resource_to3v4"]
+script = ExtResource("6_phmq8")
+direction = "east"
+target_room = NodePath("../Room03")
+
+[sub_resource type="Resource" id="Resource_tc6dn"]
+script = ExtResource("6_phmq8")
+direction = "west"
+target_room = NodePath("../Room04")
+
+[sub_resource type="Resource" id="Resource_vrb54"]
+script = ExtResource("6_phmq8")
+direction = "north"
+target_room = NodePath("../Room01")
+
+[sub_resource type="Resource" id="Resource_w5nw2"]
+script = ExtResource("6_phmq8")
+direction = "south"
+target_room = NodePath("../Room02")
+
+[sub_resource type="Resource" id="Resource_jrv3a"]
+script = ExtResource("6_phmq8")
+direction = "east"
+target_room = NodePath("../Room03")
+
+[sub_resource type="Resource" id="Resource_lj1ug"]
+script = ExtResource("6_phmq8")
+direction = "west"
+target_room = NodePath("../Room04")
+
+[sub_resource type="Resource" id="Resource_td0fc"]
+script = ExtResource("6_phmq8")
+direction = "north"
+target_room = NodePath("../Room03")
+
+[sub_resource type="Resource" id="Resource_om7cn"]
+script = ExtResource("6_phmq8")
+direction = "south"
+target_room = NodePath("../Room02")
+
+[sub_resource type="Resource" id="Resource_tyrsn"]
+script = ExtResource("6_phmq8")
+direction = "east"
+target_room = NodePath("../Room03")
+
+[sub_resource type="Resource" id="Resource_5hcfl"]
+script = ExtResource("6_phmq8")
+direction = "west"
+target_room = NodePath("../Room01")
+
+[sub_resource type="Resource" id="Resource_jcwun"]
+script = ExtResource("6_phmq8")
+direction = "north"
+target_room = NodePath("../Room04")
+
+[sub_resource type="Resource" id="Resource_orn45"]
+script = ExtResource("6_phmq8")
+direction = "south"
+target_room = NodePath("../Room04")
+
+[sub_resource type="Resource" id="Resource_ps70n"]
+script = ExtResource("6_phmq8")
+direction = "east"
+target_room = NodePath("../Room04")
+
+[sub_resource type="Resource" id="Resource_i7wos"]
+script = ExtResource("6_phmq8")
+direction = "west"
+target_room = NodePath("../Room01")
+
+[sub_resource type="Resource" id="Resource_kjpuc"]
+script = ExtResource("6_phmq8")
+direction = "south"
+target_room = NodePath("../Room01")
+
+[sub_resource type="Resource" id="Resource_jv6mm"]
+script = ExtResource("6_phmq8")
+direction = "east"
+target_room = NodePath("../Room19")
+
+[sub_resource type="Resource" id="Resource_nl3ql"]
+script = ExtResource("6_phmq8")
+direction = "west"
+target_room = NodePath("../Room11")
+
+[sub_resource type="Resource" id="Resource_pgk3x"]
+script = ExtResource("6_phmq8")
+direction = "up"
+target_room = NodePath("../Room25")
+
+[sub_resource type="Resource" id="Resource_vb134"]
+script = ExtResource("6_phmq8")
+direction = "stairs"
+target_room = NodePath("../Room25")
+
+[sub_resource type="Resource" id="Resource_ri0pg"]
+script = ExtResource("6_phmq8")
+direction = "out"
+target_room = NodePath("../Room01")
+
+[sub_resource type="Resource" id="Resource_moqvd"]
+script = ExtResource("6_phmq8")
+direction = "north"
+target_room = NodePath("../Room11")
+
+[sub_resource type="Resource" id="Resource_y2ywb"]
+script = ExtResource("6_phmq8")
+direction = "out"
+target_room = NodePath("../Room11")
+
+[sub_resource type="Resource" id="Resource_oayup"]
+script = ExtResource("6_phmq8")
+direction = "east"
+target_room = NodePath("../Room11")
+
+[sub_resource type="Resource" id="Resource_5j0t5"]
+script = ExtResource("6_phmq8")
+direction = "out"
+target_room = NodePath("../Room11")
+
+[sub_resource type="Resource" id="Resource_lweqm"]
+script = ExtResource("6_phmq8")
+direction = "east"
+target_room = NodePath("../Room12")
+
+[sub_resource type="Resource" id="Resource_aud4r"]
+script = ExtResource("6_phmq8")
+direction = "out"
+target_room = NodePath("../Room12")
+
+[sub_resource type="Resource" id="Resource_utpj3"]
+script = ExtResource("6_phmq8")
+direction = "north"
+target_room = NodePath("../Room12")
+
+[sub_resource type="Resource" id="Resource_5r0ku"]
+script = ExtResource("6_phmq8")
+direction = "south"
+target_room = NodePath("../Room07")
+
+[sub_resource type="Resource" id="Resource_gfv1i"]
+script = ExtResource("6_phmq8")
+direction = "east"
+target_room = NodePath("../Room06")
+
+[sub_resource type="Resource" id="Resource_cs4wg"]
+script = ExtResource("6_phmq8")
+direction = "west"
+target_room = NodePath("../Room08")
+
+[sub_resource type="Resource" id="Resource_o0q5s"]
+script = ExtResource("6_phmq8")
+direction = "north"
+target_room = NodePath("../Room13")
+
+[sub_resource type="Resource" id="Resource_h18fg"]
+script = ExtResource("6_phmq8")
+direction = "south"
+target_room = NodePath("../Room11")
+
+[sub_resource type="Resource" id="Resource_50dsc"]
+script = ExtResource("6_phmq8")
+direction = "west"
+target_room = NodePath("../Room09")
+
+[sub_resource type="Resource" id="Resource_m0fcx"]
+script = ExtResource("6_phmq8")
+direction = "north"
+target_room = NodePath("../Room26")
+
+[sub_resource type="Resource" id="Resource_lfw40"]
+script = ExtResource("6_phmq8")
+direction = "south"
+target_room = NodePath("../Room12")
+
+[sub_resource type="Resource" id="Resource_wcnyj"]
+script = ExtResource("6_phmq8")
+direction = "east"
+target_room = NodePath("../Room14")
+
+[sub_resource type="Resource" id="Resource_p2vtr"]
+script = ExtResource("6_phmq8")
+direction = "east"
+target_room = NodePath("../Room15")
+
+[sub_resource type="Resource" id="Resource_c5k2l"]
+script = ExtResource("6_phmq8")
+direction = "west"
+target_room = NodePath("../Room13")
+
+[sub_resource type="Resource" id="Resource_xorbk"]
+script = ExtResource("6_phmq8")
+direction = "east"
+target_room = NodePath("../Room16")
+
+[sub_resource type="Resource" id="Resource_wex5a"]
+script = ExtResource("6_phmq8")
+direction = "west"
+target_room = NodePath("../Room14")
+
+[sub_resource type="Resource" id="Resource_itarv"]
+script = ExtResource("6_phmq8")
+direction = "south"
+target_room = NodePath("../Room17")
+
+[sub_resource type="Resource" id="Resource_7llt5"]
+script = ExtResource("6_phmq8")
+direction = "west"
+target_room = NodePath("../Room15")
+
+[sub_resource type="Resource" id="Resource_xoypb"]
+script = ExtResource("6_phmq8")
+direction = "out"
+target_room = NodePath("../Room15")
+
+[sub_resource type="Resource" id="Resource_7ejre"]
+script = ExtResource("6_phmq8")
+direction = "north"
+target_room = NodePath("../Room15")
+
+[sub_resource type="Resource" id="Resource_1v8im"]
+script = ExtResource("6_phmq8")
+direction = "south"
+target_room = NodePath("../Room19")
+
+[sub_resource type="Resource" id="Resource_70law"]
+script = ExtResource("6_phmq8")
+direction = "east"
+target_room = NodePath("../Room18")
+
+[sub_resource type="Resource" id="Resource_b23rw"]
+script = ExtResource("6_phmq8")
+direction = "west"
+target_room = NodePath("../Room17")
+
+[sub_resource type="Resource" id="Resource_a2d4i"]
+script = ExtResource("6_phmq8")
+direction = "out"
+target_room = NodePath("../Room17")
+
+[sub_resource type="Resource" id="Resource_kdg7e"]
+script = ExtResource("6_phmq8")
+direction = "north"
+target_room = NodePath("../Room17")
+
+[sub_resource type="Resource" id="Resource_m3g2t"]
+script = ExtResource("6_phmq8")
+direction = "west"
+target_room = NodePath("../Room06")
+
+[sub_resource type="Resource" id="Resource_vb86v"]
+script = ExtResource("6_phmq8")
+direction = "east"
+target_room = NodePath("../Room20")
+
+[sub_resource type="Resource" id="Resource_2l3wb"]
+script = ExtResource("6_phmq8")
+direction = "south"
+target_room = NodePath("../Room21")
+
+[sub_resource type="Resource" id="Resource_5s43c"]
+script = ExtResource("6_phmq8")
+direction = "west"
+target_room = NodePath("../Room19")
+
+[sub_resource type="Resource" id="Resource_qekpp"]
+script = ExtResource("6_phmq8")
+direction = "out"
+target_room = NodePath("../Room19")
+
+[sub_resource type="Resource" id="Resource_cqebv"]
+script = ExtResource("6_phmq8")
+direction = "north"
+target_room = NodePath("../Room20")
+
+[sub_resource type="Resource" id="Resource_ywwdr"]
+script = ExtResource("6_phmq8")
+direction = "south"
+target_room = NodePath("../Room22")
+
+[sub_resource type="Resource" id="Resource_g3185"]
+script = ExtResource("6_phmq8")
+direction = "north"
+target_room = NodePath("../Room21")
+
+[sub_resource type="Resource" id="Resource_ke3xr"]
+script = ExtResource("6_phmq8")
+direction = "south"
+target_room = NodePath("../Room23")
+
+[sub_resource type="Resource" id="Resource_p8hav"]
+script = ExtResource("6_phmq8")
+direction = "north"
+target_room = NodePath("../Room22")
+
+[sub_resource type="Resource" id="Resource_21r7y"]
+script = ExtResource("6_phmq8")
+direction = "up"
+target_room = NodePath("../Room23")
+
+[sub_resource type="Resource" id="Resource_u07hg"]
+script = ExtResource("6_phmq8")
+direction = "out"
+target_room = NodePath("../Room23")
+
+[sub_resource type="Resource" id="Resource_w4mmw"]
+script = ExtResource("6_phmq8")
+direction = "up"
+target_room = NodePath("../Room28")
+
+[sub_resource type="Resource" id="Resource_mq5fc"]
+script = ExtResource("6_phmq8")
+direction = "down"
+target_room = NodePath("../Room06")
+
+[sub_resource type="Resource" id="Resource_0040t"]
+script = ExtResource("6_phmq8")
+direction = "south"
+target_room = NodePath("../Room13")
+
+[sub_resource type="Resource" id="Resource_kbra1"]
+script = ExtResource("6_phmq8")
+direction = "east"
+target_room = NodePath("../Room27")
+
+[sub_resource type="Resource" id="Resource_56nxf"]
+script = ExtResource("6_phmq8")
+direction = "shed"
+target_room = NodePath("../Room27")
+
+[sub_resource type="Resource" id="Resource_0qmsx"]
+script = ExtResource("6_phmq8")
+direction = "west"
+target_room = NodePath("../Room26")
+
+[sub_resource type="Resource" id="Resource_p10s3"]
+script = ExtResource("6_phmq8")
+direction = "out"
+target_room = NodePath("../Room26")
+
+[sub_resource type="Resource" id="Resource_umsol"]
+script = ExtResource("6_phmq8")
+direction = "north"
+target_room = NodePath("../Room36")
+
+[sub_resource type="Resource" id="Resource_biick"]
+script = ExtResource("6_phmq8")
+direction = "east"
+target_room = NodePath("../Room30")
+
+[sub_resource type="Resource" id="Resource_dxwnp"]
+script = ExtResource("6_phmq8")
+direction = "west"
+target_room = NodePath("../Room34")
+
+[sub_resource type="Resource" id="Resource_8cl3d"]
+script = ExtResource("6_phmq8")
+direction = "down"
+target_room = NodePath("../Room25")
+
+[sub_resource type="Resource" id="Resource_iotmk"]
+script = ExtResource("6_phmq8")
+direction = "stairs"
+target_room = NodePath("../Room25")
+
+[sub_resource type="Resource" id="Resource_mu18d"]
+script = ExtResource("6_phmq8")
+direction = "north"
+target_room = NodePath("../Room30")
+
+[sub_resource type="Resource" id="Resource_o0a2o"]
+script = ExtResource("6_phmq8")
+direction = "west"
+target_room = NodePath("../Room35")
+
+[sub_resource type="Resource" id="Resource_pls1w"]
+script = ExtResource("6_phmq8")
+direction = "north"
+target_room = NodePath("../Room28")
+
+[sub_resource type="Resource" id="Resource_cf3q1"]
+script = ExtResource("6_phmq8")
+direction = "south"
+target_room = NodePath("../Room29")
+
+[sub_resource type="Resource" id="Resource_stl5j"]
+script = ExtResource("6_phmq8")
+direction = "east"
+target_room = NodePath("../Room31")
+
+[sub_resource type="Resource" id="Resource_ykhlt"]
+script = ExtResource("6_phmq8")
+direction = "north"
+target_room = NodePath("../Room33")
+
+[sub_resource type="Resource" id="Resource_v54uu"]
+script = ExtResource("6_phmq8")
+direction = "east"
+target_room = NodePath("../Room32")
+
+[sub_resource type="Resource" id="Resource_xfw2r"]
+script = ExtResource("6_phmq8")
+direction = "west"
+target_room = NodePath("../Room30")
+
+[sub_resource type="Resource" id="Resource_hua3g"]
+script = ExtResource("6_phmq8")
+direction = "west"
+target_room = NodePath("../Room31")
+
+[sub_resource type="Resource" id="Resource_rt5g2"]
+script = ExtResource("6_phmq8")
+direction = "out"
+target_room = NodePath("../Room30")
+
+[sub_resource type="Resource" id="Resource_xtejn"]
+script = ExtResource("6_phmq8")
+direction = "south"
+target_room = NodePath("../Room31")
+
+[sub_resource type="Resource" id="Resource_5kc3s"]
+script = ExtResource("6_phmq8")
+direction = "out"
+target_room = NodePath("../Room31")
+
+[sub_resource type="Resource" id="Resource_qfy6s"]
+script = ExtResource("6_phmq8")
+direction = "east"
+target_room = NodePath("../Room28")
+
+[sub_resource type="Resource" id="Resource_k4soa"]
+script = ExtResource("6_phmq8")
+direction = "south"
+target_room = NodePath("../Room35")
+
+[sub_resource type="Resource" id="Resource_tw67h"]
+script = ExtResource("6_phmq8")
+direction = "north"
+target_room = NodePath("../Room34")
+
+[sub_resource type="Resource" id="Resource_2gq3r"]
+script = ExtResource("6_phmq8")
+direction = "east"
+target_room = NodePath("../Room29")
+
+[sub_resource type="Resource" id="Resource_6f6yy"]
+script = ExtResource("6_phmq8")
+direction = "up"
+target_room = NodePath("../Room37")
+
+[sub_resource type="Resource" id="Resource_pyqhf"]
+script = ExtResource("6_phmq8")
+direction = "stairs"
+target_room = NodePath("../Room37")
+
+[sub_resource type="Resource" id="Resource_c7x5y"]
+script = ExtResource("6_phmq8")
+direction = "south"
+target_room = NodePath("../Room28")
+
+[sub_resource type="Resource" id="Resource_41cib"]
+script = ExtResource("6_phmq8")
+direction = "out"
+target_room = NodePath("../Room28")
+
+[sub_resource type="Resource" id="Resource_0jdgh"]
+script = ExtResource("6_phmq8")
+direction = "north"
+target_room = NodePath("../Room38")
+
+[sub_resource type="Resource" id="Resource_e5t5i"]
+script = ExtResource("6_phmq8")
+direction = "down"
+target_room = NodePath("../Room35")
+
+[sub_resource type="Resource" id="Resource_mornd"]
+script = ExtResource("6_phmq8")
+direction = "stairs"
+target_room = NodePath("../Room35")
+
+[sub_resource type="Resource" id="Resource_ccsvo"]
+script = ExtResource("6_phmq8")
+direction = "south"
+target_room = NodePath("../Room37")
+
+[sub_resource type="Resource" id="Resource_gybd4"]
+script = ExtResource("6_phmq8")
+direction = "mirror"
+target_room = NodePath("../Room39")
+
+[sub_resource type="Resource" id="Resource_x3rr4"]
+script = ExtResource("6_phmq8")
+direction = "west"
+target_room = NodePath("../Room38")
+
+[sub_resource type="Resource" id="Resource_6uwwq"]
+script = ExtResource("6_phmq8")
+direction = "north"
+target_room = NodePath("../Room57")
+
+[sub_resource type="Resource" id="Resource_3fgan"]
+script = ExtResource("6_phmq8")
+direction = "south"
+target_room = NodePath("../Room40")
+
+[sub_resource type="Resource" id="Resource_51jea"]
+script = ExtResource("6_phmq8")
+direction = "east"
+target_room = NodePath("../Room42")
+
+[sub_resource type="Resource" id="Resource_frgxj"]
+script = ExtResource("6_phmq8")
+direction = "north"
+target_room = NodePath("../Room39")
+
+[sub_resource type="Resource" id="Resource_s3so7"]
+script = ExtResource("6_phmq8")
+direction = "south"
+target_room = NodePath("../Room41")
+
+[sub_resource type="Resource" id="Resource_mr2hx"]
+script = ExtResource("6_phmq8")
+direction = "east"
+target_room = NodePath("../Room57")
+
+[sub_resource type="Resource" id="Resource_wen63"]
+script = ExtResource("6_phmq8")
+direction = "north"
+target_room = NodePath("../Room40")
+
+[sub_resource type="Resource" id="Resource_730gp"]
+script = ExtResource("6_phmq8")
+direction = "east"
+target_room = NodePath("../Room56")
+
+[sub_resource type="Resource" id="Resource_lrgqj"]
+script = ExtResource("6_phmq8")
+direction = "down"
+target_room = NodePath("../Room57")
+
+[sub_resource type="Resource" id="Resource_8qjs2"]
+script = ExtResource("6_phmq8")
+direction = "north"
+target_room = NodePath("../Room57")
+
+[sub_resource type="Resource" id="Resource_46nf1"]
+script = ExtResource("6_phmq8")
+direction = "south"
+target_room = NodePath("../Room43")
+
+[sub_resource type="Resource" id="Resource_eawnr"]
+script = ExtResource("6_phmq8")
+direction = "west"
+target_room = NodePath("../Room39")
+
+[sub_resource type="Resource" id="Resource_hglp3"]
+script = ExtResource("6_phmq8")
+direction = "north"
+target_room = NodePath("../Room42")
+
+[sub_resource type="Resource" id="Resource_hfgis"]
+script = ExtResource("6_phmq8")
+direction = "west"
+target_room = NodePath("../Room39")
+
+[sub_resource type="Resource" id="Resource_vc4yp"]
+script = ExtResource("6_phmq8")
+direction = "south"
+target_room = NodePath("../Room56")
+
+[sub_resource type="Resource" id="Resource_qlgcw"]
+script = ExtResource("6_phmq8")
+direction = "window"
+target_room = NodePath("../Room56")
+
+[sub_resource type="Resource" id="Resource_7j47q"]
+script = ExtResource("6_phmq8")
+direction = "west"
+target_room = NodePath("../Room45")
+
+[sub_resource type="Resource" id="Resource_a7c1g"]
+script = ExtResource("6_phmq8")
+direction = "east"
+target_room = NodePath("../Room47")
+
+[sub_resource type="Resource" id="Resource_ttuna"]
+script = ExtResource("6_phmq8")
+direction = "gate"
+target_room = NodePath("../Room47")
+
+[sub_resource type="Resource" id="Resource_vpvgd"]
+script = ExtResource("6_phmq8")
+direction = "west"
+target_room = NodePath("../Room46")
+
+[sub_resource type="Resource" id="Resource_ja817"]
+script = ExtResource("6_phmq8")
+direction = "north"
+target_room = NodePath("../Room51")
+
+[sub_resource type="Resource" id="Resource_eluik"]
+script = ExtResource("6_phmq8")
+direction = "gate"
+target_room = NodePath("../Room46")
+
+[sub_resource type="Resource" id="Resource_rx7un"]
+script = ExtResource("6_phmq8")
+direction = "north"
+target_room = NodePath("../Room49")
+
+[sub_resource type="Resource" id="Resource_o7f0m"]
+script = ExtResource("6_phmq8")
+direction = "out"
+target_room = NodePath("../Room49")
+
+[sub_resource type="Resource" id="Resource_6g6dx"]
+script = ExtResource("6_phmq8")
+direction = "north"
+target_room = NodePath("../Room52")
+
+[sub_resource type="Resource" id="Resource_3rcuo"]
+script = ExtResource("6_phmq8")
+direction = "south"
+target_room = NodePath("../Room48")
+
+[sub_resource type="Resource" id="Resource_1piv7"]
+script = ExtResource("6_phmq8")
+direction = "out"
+target_room = NodePath("../Room52")
+
+[sub_resource type="Resource" id="Resource_hdhra"]
+script = ExtResource("6_phmq8")
+direction = "west"
+target_room = NodePath("../Room51")
+
+[sub_resource type="Resource" id="Resource_ard2q"]
+script = ExtResource("6_phmq8")
+direction = "east"
+target_room = NodePath("../Room53")
+
+[sub_resource type="Resource" id="Resource_5yoqt"]
+script = ExtResource("6_phmq8")
+direction = "north"
+target_room = NodePath("../Room52")
+
+[sub_resource type="Resource" id="Resource_i3u0h"]
+script = ExtResource("6_phmq8")
+direction = "south"
+target_room = NodePath("../Room47")
+
+[sub_resource type="Resource" id="Resource_7rj42"]
+script = ExtResource("6_phmq8")
+direction = "east"
+target_room = NodePath("../Room50")
+
+[sub_resource type="Resource" id="Resource_dk6b6"]
+script = ExtResource("6_phmq8")
+direction = "west"
+target_room = NodePath("../Room49")
+
+[sub_resource type="Resource" id="Resource_tj50b"]
+script = ExtResource("6_phmq8")
+direction = "east"
+target_room = NodePath("../Room51")
+
+[sub_resource type="Resource" id="Resource_xynfv"]
+script = ExtResource("6_phmq8")
+direction = "west"
+target_room = NodePath("../Room50")
+
+[sub_resource type="Resource" id="Resource_rcguy"]
+script = ExtResource("6_phmq8")
+direction = "east"
+target_room = NodePath("../Room54")
+
+[sub_resource type="Resource" id="Resource_vgsn8"]
+script = ExtResource("6_phmq8")
+direction = "chute"
+target_room = NodePath("../Room54")
+
+[sub_resource type="Resource" id="Resource_qqqdy"]
+script = ExtResource("6_phmq8")
+direction = "west"
+target_room = NodePath("../Room50")
+
+[sub_resource type="Resource" id="Resource_4yf7q"]
+script = ExtResource("6_phmq8")
+direction = "east"
+target_room = NodePath("../Room54")
+
+[sub_resource type="Resource" id="Resource_um3rq"]
+script = ExtResource("6_phmq8")
+direction = "chute"
+target_room = NodePath("../Room54")
+
+[sub_resource type="Resource" id="Resource_d51qu"]
+script = ExtResource("6_phmq8")
+direction = "north"
+target_room = NodePath("../Room44")
+
+[sub_resource type="Resource" id="Resource_qjrgl"]
+script = ExtResource("6_phmq8")
+direction = "west"
+target_room = NodePath("../Room41")
+
+[sub_resource type="Resource" id="Resource_ixlqi"]
+script = ExtResource("6_phmq8")
+direction = "window"
+target_room = NodePath("../Room44")
+
+[sub_resource type="Resource" id="Resource_y2bgd"]
+script = ExtResource("6_phmq8")
+direction = "up"
+target_room = NodePath("../Room57")
+
+[node name="RoomManager" type="Node"]
+script = ExtResource("1_m75wr")
+
+[node name="Room01" type="Node" parent="."]
+script = ExtResource("2_056n7")
+room_title = "Outside building"
+room_description = "You are outside a tall gloomy building. There is a door here, to the north"
+room_items = Array[Resource("res://items/item.gd")]([ExtResource("3_6siwh"), ExtResource("4_4aq5i"), ExtResource("5_v754j")])
+room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_n3y5j"), SubResource("Resource_hjpga"), SubResource("Resource_to3v4"), SubResource("Resource_tc6dn")])
+room_npcs = null
+
+[node name="Room02" type="Node" parent="."]
+script = ExtResource("7_peixe")
+room_title = "Dark forest 1"
+room_description = "You are in a dark forest, full of tall and rather strange trees."
+room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_vrb54"), SubResource("Resource_w5nw2"), SubResource("Resource_jrv3a"), SubResource("Resource_lj1ug")])
+
+[node name="Room03" type="Node" parent="."]
+script = ExtResource("8_v0k1c")
+room_title = "Dark forest 2"
+room_description = "You are in a dark forest. It is early autumn."
+room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_td0fc"), SubResource("Resource_om7cn"), SubResource("Resource_tyrsn"), SubResource("Resource_5hcfl")])
+
+[node name="Room04" type="Node" parent="."]
+script = ExtResource("9_4sduk")
+room_title = "Dark forest 3"
+room_description = "You are in a dark forest, tall trees  are all around."
+room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_jcwun"), SubResource("Resource_orn45"), SubResource("Resource_ps70n"), SubResource("Resource_i7wos")])
+
+[node name="Room06" type="Node" parent="."]
+script = ExtResource("7_4busx")
+room_title = "Entrance"
+room_description = "You are inside the building. Although quite dingy, this place is certainly impressive. Passages go east-west past the exit in the south. Crumbling wooden stairs climb to the next floor."
+room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_kjpuc"), SubResource("Resource_jv6mm"), SubResource("Resource_nl3ql"), SubResource("Resource_pgk3x"), SubResource("Resource_vb134"), SubResource("Resource_ri0pg")])
+
+[node name="Room07" type="Node" parent="."]
+script = ExtResource("7_4busx")
+room_title = "Make-up room"
+room_description = "You are in a make-up room, and there are various uninteresting things around."
+room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_moqvd"), SubResource("Resource_y2ywb")])
+
+[node name="Room08" type="Node" parent="."]
+script = ExtResource("7_4busx")
+room_title = "Props room"
+room_description = "You are in a props room, and a mad axe man is here!"
+room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_oayup"), SubResource("Resource_5j0t5")])
+
+[node name="Room09" type="Node" parent="."]
+script = ExtResource("7_4busx")
+room_title = "Costumes room"
+room_description = "You're in the costumes room. None of the lavish costumes remain."
+room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_lweqm"), SubResource("Resource_aud4r")])
+
+[node name="Room11" type="Node" parent="."]
+script = ExtResource("7_4busx")
+room_title = "Corridor 1"
+room_description = "You're in a corridor that goes north and east. Rooms are to the south and west."
+room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_utpj3"), SubResource("Resource_5r0ku"), SubResource("Resource_gfv1i"), SubResource("Resource_cs4wg")])
+
+[node name="Room12" type="Node" parent="."]
+script = ExtResource("7_4busx")
+room_title = "Corridor 2"
+room_description = "You're in a north to south corridor which has a doorway on the west."
+room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_o0q5s"), SubResource("Resource_h18fg"), SubResource("Resource_50dsc")])
+
+[node name="Room13" type="Node" parent="."]
+script = ExtResource("7_4busx")
+room_title = "Corridor 4"
+room_description = "You're in a corridor that twists east and south. There is a doorway to the north."
+room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_m0fcx"), SubResource("Resource_lfw40"), SubResource("Resource_wcnyj")])
+
+[node name="Room14" type="Node" parent="."]
+script = ExtResource("7_4busx")
+room_title = "Corridor 5"
+room_description = "You're in a corridor that goes east/west."
+room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_p2vtr"), SubResource("Resource_c5k2l")])
+
+[node name="Room15" type="Node" parent="."]
+script = ExtResource("7_4busx")
+room_title = "Corridor 6"
+room_description = "You're in a corridor that twists west and south. There is a door on the east side."
+room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_xorbk"), SubResource("Resource_wex5a"), SubResource("Resource_itarv")])
+
+[node name="Room16" type="Node" parent="."]
+script = ExtResource("7_4busx")
+room_title = "Kitchen"
+room_description = "You are in a kitchen, where a witch is stirring a strange mixture in a large cauldron. (The mixture is in  the cauldron, not the witch)"
+room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_7llt5"), SubResource("Resource_xoypb")])
+
+[node name="Room17" type="Node" parent="."]
+script = ExtResource("7_4busx")
+room_title = "Corridor 7"
+room_description = "You are in a north-south corridor. East of here lies a room labelled 'Developing Room.'"
+room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_7ejre"), SubResource("Resource_1v8im"), SubResource("Resource_70law")])
+
+[node name="Room18" type="Node" parent="."]
+script = ExtResource("11_163ne")
+room_title = "Darkish room"
+room_description = "You are in a darkish room, illuminated only by a red glowing button."
+room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_b23rw"), SubResource("Resource_a2d4i")])
+
+[node name="Room19" type="Node" parent="."]
+script = ExtResource("7_4busx")
+room_title = "Corridor 8"
+room_description = "You're in a passage that goes around the corner, North and West. There is a doorway on the East."
+room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_kdg7e"), SubResource("Resource_m3g2t"), SubResource("Resource_vb86v")])
+
+[node name="Room20" type="Node" parent="."]
+script = ExtResource("7_4busx")
+room_title = "North of ballroom"
+room_description = "You are on the north section of a set which has been created as a ballroom, stretching out to the south. There is an western exit."
+room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_2l3wb"), SubResource("Resource_5s43c"), SubResource("Resource_qekpp")])
+
+[node name="Room21" type="Node" parent="."]
+script = ExtResource("12_xoxls")
+room_title = "Centre of ballroom"
+room_description = "You're in the centre of a grand ballroom."
+room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_cqebv"), SubResource("Resource_ywwdr")])
+
+[node name="Room22" type="Node" parent="."]
+script = ExtResource("7_4busx")
+room_title = "South of ballroom"
+room_description = "You're on the south side of the ballroom set. There is a doorway south of here."
+room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_g3185"), SubResource("Resource_ke3xr")])
+
+[node name="Room23" type="Node" parent="."]
+script = ExtResource("13_ipvr6")
+room_title = "Tank of water"
+room_description = "You are on another set, next to a tank of water, perhaps left there for some boating scene. The exit lies to the north."
+room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_p8hav")])
+
+[node name="Room24" type="Node" parent="."]
+script = ExtResource("7_4busx")
+room_title = "In the tank"
+room_description = "You're in a tank of water. Because the water is so dirty it is hard to discern any details. The only exit is out!"
+room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_21r7y"), SubResource("Resource_u07hg")])
+
+[node name="Room25" type="Node" parent="."]
+script = ExtResource("8_ckcba")
+room_title = "Halfway stairs"
+room_description = "You are now halfway up these somewhat rickety stairs. The wood is particularly rotten at this point."
+room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_w4mmw"), SubResource("Resource_mq5fc")])
+
+[node name="Room26" type="Node" parent="."]
+script = ExtResource("7_4busx")
+room_title = "Backyard"
+room_description = "You are in the back yard. A southern doorway leads back into the building and a shed lies nearby."
+room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_0040t"), SubResource("Resource_kbra1"), SubResource("Resource_56nxf")])
+
+[node name="Room27" type="Node" parent="."]
+script = ExtResource("7_4busx")
+room_title = "Small shed"
+room_description = "You are in a small shed. There is a large cardboard box here on the ground."
+room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_0qmsx"), SubResource("Resource_p10s3")])
+
+[node name="Room28" type="Node" parent="."]
+script = ExtResource("7_4busx")
+room_title = "Landing above stairs"
+room_description = "You are on the landing above the stairs. A passage goes east-west and there is a door to the north."
+room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_umsol"), SubResource("Resource_biick"), SubResource("Resource_dxwnp"), SubResource("Resource_8cl3d"), SubResource("Resource_iotmk")])
+
+[node name="Room29" type="Node" parent="."]
+script = ExtResource("7_4busx")
+room_title = "Corridor 9"
+room_description = "You're in a corridor. Directions are north and west."
+room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_mu18d"), SubResource("Resource_o0a2o")])
+
+[node name="Room30" type="Node" parent="."]
+script = ExtResource("7_4busx")
+room_title = "Corridor 10"
+room_description = "You are in a passage that goes north around a corner, south around a different corner or east into another corridor."
+room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_pls1w"), SubResource("Resource_cf3q1"), SubResource("Resource_stl5j")])
+
+[node name="Room31" type="Node" parent="."]
+script = ExtResource("7_4busx")
+room_title = "Corridor 11"
+room_description = "You are in a corridor outside a room north and a room to the east. A westerly passage leads back out."
+room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_ykhlt"), SubResource("Resource_v54uu"), SubResource("Resource_xfw2r")])
+
+[node name="Room32" type="Node" parent="."]
+script = ExtResource("7_4busx")
+room_title = "Dusty bedroom"
+room_description = "You're in a dusty bedroom. A heavy carpet lies on the floor."
+room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_hua3g"), SubResource("Resource_rt5g2")])
+
+[node name="Room33" type="Node" parent="."]
+script = ExtResource("7_4busx")
+room_title = "Keep-fit room"
+room_description = "You're in a keep-fit room. An exercisebike is fixed to the floor."
+room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_xtejn"), SubResource("Resource_5kc3s")])
+
+[node name="Room34" type="Node" parent="."]
+script = ExtResource("7_4busx")
+room_title = "Corridor 12"
+room_description = "You're in a corridor that goes east and south."
+room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_qfy6s"), SubResource("Resource_k4soa")])
+
+[node name="Room35" type="Node" parent="."]
+script = ExtResource("7_4busx")
+room_title = "Corner"
+room_description = "You're in a corner. Corridors go east and north. A stairway goes up."
+room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_tw67h"), SubResource("Resource_2gq3r"), SubResource("Resource_6f6yy"), SubResource("Resource_pyqhf")])
+
+[node name="Room36" type="Node" parent="."]
+script = ExtResource("7_4busx")
+room_title = "Old bedroom"
+room_description = "You're in an old bedroom."
+room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_c7x5y"), SubResource("Resource_41cib")])
+
+[node name="Room37" type="Node" parent="."]
+script = ExtResource("7_4busx")
+room_title = "South of attic"
+room_description = "You're above the stairway in the southside of the attic."
+room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_0jdgh"), SubResource("Resource_e5t5i"), SubResource("Resource_mornd")])
+
+[node name="Room38" type="Node" parent="."]
+script = ExtResource("7_4busx")
+room_title = "North of attic"
+room_description = "You're in a north section of the attic. A large mirror is on the east side."
+room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_ccsvo"), SubResource("Resource_gybd4")])
+
+[node name="Room39" type="Node" parent="."]
+script = ExtResource("7_4busx")
+room_title = "Odd room 1"
+room_description = "You're in an odd room. There are the following: A red door in the north wall,a yellow door in the east wall, and a blue door to the south. An exit lies west."
+room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_x3rr4"), SubResource("Resource_6uwwq"), SubResource("Resource_3fgan"), SubResource("Resource_51jea")])
+
+[node name="Room40" type="Node" parent="."]
+script = ExtResource("7_4busx")
+room_title = "Odd room 2"
+room_description = "You are in another odd room, which hasa blue door north, a white door south and a purple door east."
+room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_frgxj"), SubResource("Resource_s3so7"), SubResource("Resource_mr2hx")])
+
+[node name="Room41" type="Node" parent="."]
+script = ExtResource("7_4busx")
+room_title = "Narrow ledge"
+room_description = "You're outside the building on a narrow ledge which starts here and goes east."
+room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_wen63"), SubResource("Resource_730gp"), SubResource("Resource_lrgqj")])
+
+[node name="Room42" type="Node" parent="."]
+script = ExtResource("7_4busx")
+room_title = "Odd room 3"
+room_description = "You are in an odd room. There is a black door to the north, a brown door to the south and a yellow door to the west."
+room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_8qjs2"), SubResource("Resource_46nf1"), SubResource("Resource_eawnr")])
+
+[node name="Room43" type="Node" parent="."]
+script = ExtResource("7_4busx")
+room_title = "Odd room 4"
+room_description = "You're in an odd room. A brown door lies north and a red door goes west."
+room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_hglp3"), SubResource("Resource_hfgis")])
+
+[node name="Room44" type="Node" parent="."]
+script = ExtResource("7_4busx")
+room_title = "Small room"
+room_description = "You're in a small room which has a glassless window leading out to a narrow ledge."
+room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_vc4yp"), SubResource("Resource_qlgcw")])
+
+[node name="Room45" type="Node" parent="."]
+script = ExtResource("7_4busx")
+room_title = "Room w/o exits"
+room_description = "You have fallen into a room with no apparent exits. Howevar, the walls don't look entirely solid...?"
+
+[node name="Room46" type="Node" parent="."]
+script = ExtResource("7_4busx")
+room_title = "Outside large door"
+room_description = "You are outside a large door. The onlyexits are west back to the exitless room and east through the door."
+room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_7j47q"), SubResource("Resource_a7c1g"), SubResource("Resource_ttuna")])
+
+[node name="Room47" type="Node" parent="."]
+script = ExtResource("7_4busx")
+room_title = "High walled room"
+room_description = "You are in a high walled room which is quite damp in places. West is a large door, and a passage takes you north."
+room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_vpvgd"), SubResource("Resource_ja817"), SubResource("Resource_eluik")])
+
+[node name="Room48" type="Node" parent="."]
+script = ExtResource("7_4busx")
+room_title = "Small room w bandage"
+room_description = "You are in a small room with the odd bandage here and there."
+room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_rx7un"), SubResource("Resource_o7f0m")])
+
+[node name="Room49" type="Node" parent="."]
+script = ExtResource("7_4busx")
+room_title = "Small room 2"
+room_description = "You are in a small room. A passage goes south and the exit lies north."
+room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_6g6dx"), SubResource("Resource_3rcuo"), SubResource("Resource_1piv7")])
+
+[node name="Room50" type="Node" parent="."]
+script = ExtResource("7_4busx")
+room_title = "Crypt"
+room_description = "You're in the crypt. There are pass- ages going east and west."
+room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_hdhra"), SubResource("Resource_ard2q")])
+
+[node name="Room51" type="Node" parent="."]
+script = ExtResource("7_4busx")
+room_title = "Corridor 13"
+room_description = "You are in a passage that travels north or south. A small avenue goes east."
+room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_5yoqt"), SubResource("Resource_i3u0h"), SubResource("Resource_7rj42")])
+
+[node name="Room52" type="Node" parent="."]
+script = ExtResource("7_4busx")
+room_title = "Alley"
+room_description = "You are in an east/west alley."
+room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_dk6b6"), SubResource("Resource_tj50b")])
+
+[node name="Room53" type="Node" parent="."]
+script = ExtResource("7_4busx")
+room_title = "Large hairy room"
+room_description = "You're in a large hairy room, where there is only a passage going west There is a chute on the east wall."
+room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_xynfv"), SubResource("Resource_rcguy"), SubResource("Resource_vgsn8")])
+
+[node name="Room54" type="Node" parent="."]
+script = ExtResource("7_4busx")
+room_title = "Large room with PANIC"
+room_description = "You're in a large room with no exits. A button marked 'PANIC' is here The walls don't budge either!"
+
+[node name="Room55" type="Node" parent="."]
+script = ExtResource("7_4busx")
+room_title = "Redecorated room"
+room_description = "You are in a room which is being re- decorated. A number has been written on the wall: ????? There is a safe imbedded in one wall The message 'somewhere over the rain- bow (There's no place like..) has been written on the wall."
+room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_qqqdy"), SubResource("Resource_4yf7q"), SubResource("Resource_um3rq")])
+
+[node name="Room56" type="Node" parent="."]
+script = ExtResource("7_4busx")
+room_title = "East of narrow ledge"
+room_description = "You are at the eastern extreme of the narrow ledge. A glassless window is in front of me."
+room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_d51qu"), SubResource("Resource_qjrgl"), SubResource("Resource_ixlqi"), SubResource("Resource_y2bgd")])
+
+[node name="Room57" type="Node" parent="."]
+script = ExtResource("7_4busx")
+room_title = "Death"
+room_description = "Death"

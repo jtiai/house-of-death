@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Item" load_steps=2 format=3 uid="uid://n211mbb0yriv"]
+
+[ext_resource type="Script" path="res://items/item.gd" id="1_tw5v5"]
+
+[resource]
+script = ExtResource("1_tw5v5")
+item_name = "There is a closed door"
+item_weight = 0
+pickable = false

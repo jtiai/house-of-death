@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="NPC" load_steps=2 format=3 uid="uid://bh1uo6dagg7bd"]
+
+[ext_resource type="Script" path="res://npcs/npc.gd" id="1_orboh"]
+
+[resource]
+script = ExtResource("1_orboh")
+npc_name = "Mummy"

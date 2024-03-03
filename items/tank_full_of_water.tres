@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Item" load_steps=2 format=3 uid="uid://drrpossi8rnje"]
+
+[ext_resource type="Script" path="res://items/item.gd" id="1_2hcg4"]
+
+[resource]
+script = ExtResource("1_2hcg4")
+item_name = "Tank full of water"
+item_weight = 0
+pickable = false

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Item" load_steps=2 format=3 uid="uid://cb043j8por8p6"]
+
+[ext_resource type="Script" path="res://items/item.gd" id="1_0d2gp"]
+
+[resource]
+script = ExtResource("1_0d2gp")
+item_name = "Portrait"
+item_weight = 30
+pickable = true

@@ -1,0 +1,794 @@
+[gd_scene load_steps=130 format=3]
+
+[ext_resource type="Script" path="res://rooms/room_manager.gd" id="1_7r81s"]
+[ext_resource type="Script" path="res://rooms/room_01.gd" id="2_7emw8"]
+[ext_resource type="Resource" uid="uid://n211mbb0yriv" path="res://items/closed_door.tres" id="3_y83wx"]
+[ext_resource type="Resource" uid="uid://cixs37eqhhw2c" path="res://items/brass_door_knocker.tres" id="4_xxgsm"]
+[ext_resource type="Resource" uid="uid://dkus5q532rnoi" path="res://items/bell_push.tres" id="5_1ni3t"]
+[ext_resource type="Script" path="res://resources/room_exit.gd" id="6_f78wp"]
+[ext_resource type="Script" path="res://rooms/room_02.gd" id="7_tpm04"]
+[ext_resource type="Script" path="res://rooms/room_03.gd" id="8_w2k12"]
+[ext_resource type="Resource" uid="uid://b1xnp74h4lepb" path="res://items/odd_leaves.tres" id="9_nfmi2"]
+[ext_resource type="Script" path="res://rooms/room_04.gd" id="10_e3v6l"]
+[ext_resource type="Script" path="res://rooms/room_06.gd" id="11_3sf6h"]
+[ext_resource type="Script" path="res://rooms/room_07.gd" id="12_3btqe"]
+[ext_resource type="Resource" uid="uid://dg613130gunea" path="res://items/werewolf_mask.tres" id="13_w4tqr"]
+[ext_resource type="Script" path="res://rooms/room_08.gd" id="14_imd0j"]
+[ext_resource type="Script" path="res://rooms/room_09.gd" id="15_efpea"]
+[ext_resource type="Resource" uid="uid://dn1rqk3423unb" path="res://items/diving_gear.tres" id="16_t2ed2"]
+[ext_resource type="Script" path="res://rooms/room_11.gd" id="17_d2jh3"]
+[ext_resource type="Script" path="res://rooms/room_12.gd" id="18_7jekt"]
+[ext_resource type="Script" path="res://rooms/room_13.gd" id="19_k17h2"]
+[ext_resource type="Script" path="res://rooms/room_14.gd" id="20_6o70v"]
+[ext_resource type="Script" path="res://rooms/room_15.gd" id="21_iqx6x"]
+[ext_resource type="Script" path="res://rooms/room_16.gd" id="22_mif4u"]
+[ext_resource type="Resource" uid="uid://85j0hd2sj74v" path="res://items/cake.tres" id="23_5yfva"]
+[ext_resource type="Resource" uid="uid://c5f710gmywfmm" path="res://items/bun.tres" id="24_ywjol"]
+[ext_resource type="Script" path="res://rooms/room_17.gd" id="25_agrr2"]
+[ext_resource type="Script" path="res://rooms/room_18.gd" id="26_lxjnk"]
+[ext_resource type="Script" path="res://rooms/room_19.gd" id="27_smxdu"]
+[ext_resource type="Script" path="res://rooms/room_20.gd" id="28_yweq5"]
+[ext_resource type="Script" path="res://rooms/room_21.gd" id="29_m743e"]
+[ext_resource type="Resource" uid="uid://nx0yuxkjpqmm" path="res://items/chandelier.tres" id="30_vbnch"]
+[ext_resource type="Script" path="res://rooms/room_22.gd" id="31_irt7m"]
+[ext_resource type="Script" path="res://rooms/room_23.gd" id="32_oqhlt"]
+[ext_resource type="Script" path="res://rooms/room_24.gd" id="33_m4rlm"]
+[ext_resource type="Resource" uid="uid://b43gors5eboma" path="res://items/tadpole.tres" id="34_nxqqs"]
+[ext_resource type="Script" path="res://rooms/room_25.gd" id="35_kvtpb"]
+[ext_resource type="Script" path="res://rooms/room_26.gd" id="36_8gfek"]
+[ext_resource type="Script" path="res://rooms/room_27.gd" id="37_1do2x"]
+[ext_resource type="Script" path="res://rooms/room_28.gd" id="38_wes6u"]
+[ext_resource type="Script" path="res://rooms/room_29.gd" id="39_p8qox"]
+[ext_resource type="Script" path="res://rooms/room_30.gd" id="40_ewftd"]
+[ext_resource type="Script" path="res://rooms/room_31.gd" id="41_inv7a"]
+[ext_resource type="Script" path="res://rooms/room_32.gd" id="42_d0506"]
+[ext_resource type="Script" path="res://rooms/room_33.gd" id="43_4k08e"]
+[ext_resource type="Resource" uid="uid://dbveusb2j2lop" path="res://items/weights.tres" id="44_e7orq"]
+[ext_resource type="Script" path="res://rooms/room_34.gd" id="45_2xcbm"]
+[ext_resource type="Script" path="res://rooms/room_35.gd" id="46_xl5xb"]
+[ext_resource type="Script" path="res://rooms/room_36.gd" id="47_ylsfr"]
+[ext_resource type="Resource" uid="uid://7ifvbnitks4q" path="res://items/mattress.tres" id="48_b86ba"]
+[ext_resource type="Script" path="res://rooms/room_37.gd" id="49_e4fdf"]
+[ext_resource type="Script" path="res://rooms/room_38.gd" id="50_ohmu6"]
+[ext_resource type="Script" path="res://rooms/room_39.gd" id="51_243kt"]
+[ext_resource type="Script" path="res://rooms/room_40.gd" id="52_vhqfc"]
+[ext_resource type="Script" path="res://rooms/room_41.gd" id="53_jf7kf"]
+[ext_resource type="Script" path="res://rooms/room_42.gd" id="54_ii2qk"]
+[ext_resource type="Resource" uid="uid://cmnutfn0h6pxf" path="res://items/rusty_key.tres" id="55_gs0bp"]
+[ext_resource type="Script" path="res://rooms/room_43.gd" id="56_t8fw5"]
+[ext_resource type="Script" path="res://rooms/room_44.gd" id="57_eii2i"]
+[ext_resource type="Resource" uid="uid://cb043j8por8p6" path="res://items/portrait.tres" id="58_8gstb"]
+[ext_resource type="Script" path="res://rooms/room_45.gd" id="59_6gfoq"]
+[ext_resource type="Script" path="res://rooms/room_46.gd" id="60_r81w4"]
+[ext_resource type="Resource" uid="uid://q5l7cjkdjknt" path="res://items/huge_door.tres" id="61_am7oi"]
+[ext_resource type="Script" path="res://rooms/room_47.gd" id="62_p7i8j"]
+[ext_resource type="Resource" uid="uid://b3fwfosyko0pb" path="res://items/bracelet.tres" id="63_j34fv"]
+[ext_resource type="Script" path="res://rooms/room_48.gd" id="64_tj5pr"]
+[ext_resource type="Resource" uid="uid://dx8qkp6k8rifv" path="res://items/golden_sceptre.tres" id="65_orrwn"]
+[ext_resource type="Script" path="res://rooms/room_49.gd" id="66_stbqg"]
+[ext_resource type="Script" path="res://rooms/room_50.gd" id="67_t70cr"]
+[ext_resource type="Script" path="res://rooms/room_51.gd" id="68_igui2"]
+[ext_resource type="Script" path="res://rooms/room_52.gd" id="69_jjmc7"]
+[ext_resource type="Script" path="res://rooms/room_53.gd" id="70_0mjpx"]
+[ext_resource type="Script" path="res://rooms/room_54.gd" id="71_beu4h"]
+[ext_resource type="Script" path="res://rooms/room_55.gd" id="72_lr4kn"]
+[ext_resource type="Script" path="res://rooms/room_56.gd" id="73_n37dm"]
+[ext_resource type="Script" path="res://rooms/room_57.gd" id="74_jspdf"]
+
+[sub_resource type="Resource" id="Resource_r3ajv"]
+script = ExtResource("6_f78wp")
+direction = "north"
+target_room = NodePath("../Room06")
+
+[sub_resource type="Resource" id="Resource_7unvq"]
+script = ExtResource("6_f78wp")
+direction = "south"
+target_room = null
+
+[sub_resource type="Resource" id="Resource_na7b4"]
+script = ExtResource("6_f78wp")
+direction = "east"
+target_room = null
+
+[sub_resource type="Resource" id="Resource_onimp"]
+script = ExtResource("6_f78wp")
+direction = "west"
+target_room = null
+
+[sub_resource type="Resource" id="Resource_3t4tj"]
+script = ExtResource("6_f78wp")
+direction = "door"
+target_room = null
+
+[sub_resource type="Resource" id="Resource_ch8n6"]
+script = ExtResource("6_f78wp")
+direction = "north"
+target_room = null
+
+[sub_resource type="Resource" id="Resource_ud8qv"]
+script = ExtResource("6_f78wp")
+direction = "south"
+target_room = null
+
+[sub_resource type="Resource" id="Resource_ffaws"]
+script = ExtResource("6_f78wp")
+direction = "east"
+target_room = null
+
+[sub_resource type="Resource" id="Resource_ahmvt"]
+script = ExtResource("6_f78wp")
+direction = "west"
+target_room = null
+
+[sub_resource type="Resource" id="Resource_t5n4e"]
+script = ExtResource("6_f78wp")
+direction = "north"
+target_room = null
+
+[sub_resource type="Resource" id="Resource_2j5eg"]
+script = ExtResource("6_f78wp")
+direction = "south"
+target_room = null
+
+[sub_resource type="Resource" id="Resource_dsv5c"]
+script = ExtResource("6_f78wp")
+direction = "east"
+target_room = null
+
+[sub_resource type="Resource" id="Resource_ryw5o"]
+script = ExtResource("6_f78wp")
+direction = "west"
+target_room = null
+
+[sub_resource type="Resource" id="Resource_s7x0c"]
+script = ExtResource("6_f78wp")
+direction = "north"
+target_room = null
+
+[sub_resource type="Resource" id="Resource_jouic"]
+script = ExtResource("6_f78wp")
+direction = "south"
+target_room = null
+
+[sub_resource type="Resource" id="Resource_n7m54"]
+script = ExtResource("6_f78wp")
+direction = "east"
+target_room = null
+
+[sub_resource type="Resource" id="Resource_wscnr"]
+script = ExtResource("6_f78wp")
+direction = "west"
+target_room = null
+
+[sub_resource type="Resource" id="Resource_c5wbx"]
+script = ExtResource("6_f78wp")
+direction = "south"
+target_room = null
+
+[sub_resource type="Resource" id="Resource_vc1ot"]
+script = ExtResource("6_f78wp")
+direction = "east"
+target_room = null
+
+[sub_resource type="Resource" id="Resource_vuu0u"]
+script = ExtResource("6_f78wp")
+direction = "west"
+target_room = null
+
+[sub_resource type="Resource" id="Resource_oyh6s"]
+script = ExtResource("6_f78wp")
+direction = "up"
+target_room = null
+
+[sub_resource type="Resource" id="Resource_kccjp"]
+script = ExtResource("6_f78wp")
+direction = "stairs"
+target_room = null
+
+[sub_resource type="Resource" id="Resource_8pryy"]
+script = ExtResource("6_f78wp")
+direction = "out"
+target_room = null
+
+[sub_resource type="Resource" id="Resource_umlro"]
+script = ExtResource("6_f78wp")
+direction = "south"
+target_room = null
+
+[sub_resource type="Resource" id="Resource_56fmp"]
+script = ExtResource("6_f78wp")
+direction = "out"
+target_room = null
+
+[sub_resource type="Resource" id="Resource_ckacf"]
+script = ExtResource("6_f78wp")
+direction = "east"
+target_room = null
+
+[sub_resource type="Resource" id="Resource_kyhms"]
+script = ExtResource("6_f78wp")
+direction = "out"
+target_room = null
+
+[sub_resource type="Resource" id="Resource_p4bic"]
+script = ExtResource("6_f78wp")
+direction = "east"
+target_room = null
+
+[sub_resource type="Resource" id="Resource_cenm2"]
+script = ExtResource("6_f78wp")
+direction = "out"
+target_room = null
+
+[sub_resource type="Resource" id="Resource_cu40k"]
+script = ExtResource("6_f78wp")
+direction = "north"
+target_room = null
+
+[sub_resource type="Resource" id="Resource_7id5s"]
+script = ExtResource("6_f78wp")
+direction = "south"
+target_room = null
+
+[sub_resource type="Resource" id="Resource_o6lk3"]
+script = ExtResource("6_f78wp")
+direction = "east"
+target_room = null
+
+[sub_resource type="Resource" id="Resource_gdn2w"]
+script = ExtResource("6_f78wp")
+direction = "west"
+target_room = null
+
+[sub_resource type="Resource" id="Resource_do0x0"]
+script = ExtResource("6_f78wp")
+direction = "north"
+target_room = null
+
+[sub_resource type="Resource" id="Resource_beldt"]
+script = ExtResource("6_f78wp")
+direction = "south"
+target_room = null
+
+[sub_resource type="Resource" id="Resource_c7d6h"]
+script = ExtResource("6_f78wp")
+direction = "west"
+target_room = null
+
+[sub_resource type="Resource" id="Resource_cks6i"]
+script = ExtResource("6_f78wp")
+direction = "north"
+target_room = null
+
+[sub_resource type="Resource" id="Resource_e62gd"]
+script = ExtResource("6_f78wp")
+direction = "south"
+target_room = null
+
+[sub_resource type="Resource" id="Resource_e72ts"]
+script = ExtResource("6_f78wp")
+direction = "east"
+target_room = null
+
+[sub_resource type="Resource" id="Resource_th7ee"]
+script = ExtResource("6_f78wp")
+direction = "east"
+target_room = null
+
+[sub_resource type="Resource" id="Resource_6a3mq"]
+script = ExtResource("6_f78wp")
+direction = "west"
+target_room = null
+
+[sub_resource type="Resource" id="Resource_u84bh"]
+script = ExtResource("6_f78wp")
+direction = "east"
+target_room = null
+
+[sub_resource type="Resource" id="Resource_u0mmm"]
+script = ExtResource("6_f78wp")
+direction = "west"
+target_room = null
+
+[sub_resource type="Resource" id="Resource_7pukl"]
+script = ExtResource("6_f78wp")
+direction = "south"
+target_room = null
+
+[sub_resource type="Resource" id="Resource_0uywr"]
+script = ExtResource("6_f78wp")
+direction = "west"
+target_room = null
+
+[sub_resource type="Resource" id="Resource_7ok42"]
+script = ExtResource("6_f78wp")
+direction = "out"
+target_room = null
+
+[sub_resource type="Resource" id="Resource_oh8mo"]
+script = ExtResource("6_f78wp")
+direction = "north"
+target_room = null
+
+[sub_resource type="Resource" id="Resource_tmo2v"]
+script = ExtResource("6_f78wp")
+direction = "south"
+target_room = null
+
+[sub_resource type="Resource" id="Resource_nn1r1"]
+script = ExtResource("6_f78wp")
+direction = "east"
+target_room = null
+
+[sub_resource type="Resource" id="Resource_mnhmu"]
+script = ExtResource("6_f78wp")
+direction = "west"
+target_room = null
+
+[sub_resource type="Resource" id="Resource_aoal1"]
+script = ExtResource("6_f78wp")
+direction = "out"
+target_room = null
+
+[sub_resource type="Resource" id="Resource_8grn4"]
+script = ExtResource("6_f78wp")
+direction = "north"
+target_room = null
+
+[sub_resource type="Resource" id="Resource_ek1xg"]
+script = ExtResource("6_f78wp")
+direction = "west"
+target_room = null
+
+[sub_resource type="Resource" id="Resource_4lclv"]
+script = ExtResource("6_f78wp")
+direction = "east"
+target_room = null
+
+[sub_resource type="Resource" id="Resource_l02qs"]
+script = ExtResource("6_f78wp")
+direction = "north"
+target_room = NodePath("../Room40")
+
+[node name="RoomManager" type="Node"]
+script = ExtResource("1_7r81s")
+
+[node name="Room01" type="Node" parent="."]
+script = ExtResource("2_7emw8")
+room_title = "Entrance"
+room_description = "You are outside a tall gloomy building. There is a door here, to the North"
+room_items = Array[Resource("res://items/item.gd")]([ExtResource("3_y83wx"), ExtResource("4_xxgsm"), ExtResource("5_1ni3t")])
+room_exits = Array[ExtResource("6_f78wp")]([SubResource("Resource_r3ajv"), SubResource("Resource_7unvq"), SubResource("Resource_na7b4"), SubResource("Resource_onimp"), SubResource("Resource_3t4tj")])
+room_npcs = Array[Resource("res://npcs/npc.gd")]([])
+
+[node name="Room02" type="Node" parent="."]
+script = ExtResource("7_tpm04")
+room_title = "Default room"
+room_description = "You are in a dark forest, full of tall and rather strange trees."
+room_items = Array[Resource("res://npcs/npc.gd")]([])
+room_exits = Array[ExtResource("6_f78wp")]([SubResource("Resource_ch8n6"), SubResource("Resource_ud8qv"), SubResource("Resource_ffaws"), SubResource("Resource_ahmvt")])
+room_npcs = Array[Resource("res://npcs/npc.gd")]([])
+
+[node name="Room03" type="Node" parent="."]
+script = ExtResource("8_w2k12")
+room_title = "Default room"
+room_description = "You are in a dark forest. It is early autumn."
+room_items = Array[Resource("res://items/item.gd")]([ExtResource("9_nfmi2")])
+room_exits = Array[ExtResource("6_f78wp")]([SubResource("Resource_t5n4e"), SubResource("Resource_2j5eg"), SubResource("Resource_dsv5c"), SubResource("Resource_ryw5o")])
+room_npcs = Array[Resource("res://npcs/npc.gd")]([])
+
+[node name="Room04" type="Node" parent="."]
+script = ExtResource("10_e3v6l")
+room_title = "Default room"
+room_description = "You are in a dark forest, tall trees are all around."
+room_items = Array[Resource("res://npcs/npc.gd")]([])
+room_exits = Array[ExtResource("6_f78wp")]([SubResource("Resource_s7x0c"), SubResource("Resource_jouic"), SubResource("Resource_n7m54"), SubResource("Resource_wscnr")])
+room_npcs = Array[Resource("res://npcs/npc.gd")]([])
+
+[node name="Room06" type="Node" parent="."]
+script = ExtResource("11_3sf6h")
+room_title = "Default room"
+room_description = "You are inside the building. Although quite dingy, this place is certainly impressive. Passages go east-west past the exit in the south. Crumbling wooden stairs climb to the next floor"
+room_items = Array[Resource("res://npcs/npc.gd")]([])
+room_exits = Array[ExtResource("6_f78wp")]([SubResource("Resource_c5wbx"), SubResource("Resource_vc1ot"), SubResource("Resource_vuu0u"), SubResource("Resource_oyh6s"), SubResource("Resource_kccjp"), SubResource("Resource_8pryy")])
+room_npcs = Array[Resource("res://npcs/npc.gd")]([])
+
+[node name="Room07" type="Node" parent="."]
+script = ExtResource("12_3btqe")
+room_title = "Default room"
+room_description = "You are in a make-up room, and there are various uninteresting things around."
+room_items = Array[Resource("res://items/item.gd")]([ExtResource("13_w4tqr")])
+room_exits = Array[ExtResource("6_f78wp")]([SubResource("Resource_umlro"), SubResource("Resource_56fmp")])
+room_npcs = Array[Resource("res://npcs/npc.gd")]([])
+
+[node name="Room08" type="Node" parent="."]
+script = ExtResource("14_imd0j")
+room_title = "Default room"
+room_description = "\"You are in a props room, and a mad axe man is here!\""
+room_items = Array[Resource("res://npcs/npc.gd")]([])
+room_exits = Array[ExtResource("6_f78wp")]([SubResource("Resource_ckacf"), SubResource("Resource_kyhms")])
+room_npcs = Array[Resource("res://npcs/npc.gd")]([])
+
+[node name="Room09" type="Node" parent="."]
+script = ExtResource("15_efpea")
+room_title = "Default room"
+room_description = "You're in the costumes room. None of the lavish costumes remain"
+room_items = Array[Resource("res://items/item.gd")]([ExtResource("16_t2ed2")])
+room_exits = Array[ExtResource("6_f78wp")]([SubResource("Resource_p4bic"), SubResource("Resource_cenm2")])
+room_npcs = Array[Resource("res://npcs/npc.gd")]([])
+
+[node name="Room11" type="Node" parent="."]
+script = ExtResource("17_d2jh3")
+room_title = "Default room"
+room_description = "You're in a corridor that goes North and East. Rooms are to the South and West. "
+room_items = Array[Resource("res://npcs/npc.gd")]([])
+room_exits = Array[ExtResource("6_f78wp")]([SubResource("Resource_cu40k"), SubResource("Resource_7id5s"), SubResource("Resource_o6lk3"), SubResource("Resource_gdn2w")])
+room_npcs = Array[Resource("res://npcs/npc.gd")]([])
+
+[node name="Room12" type="Node" parent="."]
+script = ExtResource("18_7jekt")
+room_title = "Default room"
+room_description = "You're in a north to south corridor which has a doorway on the West"
+room_items = Array[Resource("res://npcs/npc.gd")]([])
+room_exits = Array[ExtResource("6_f78wp")]([SubResource("Resource_do0x0"), SubResource("Resource_beldt"), SubResource("Resource_c7d6h")])
+room_npcs = Array[Resource("res://npcs/npc.gd")]([])
+
+[node name="Room13" type="Node" parent="."]
+script = ExtResource("19_k17h2")
+room_title = "Default room"
+room_description = "You're in a corridor that twists east and south. There is a doorway to the north"
+room_items = Array[Resource("res://npcs/npc.gd")]([])
+room_exits = Array[ExtResource("6_f78wp")]([SubResource("Resource_cks6i"), SubResource("Resource_e62gd"), SubResource("Resource_e72ts")])
+room_npcs = Array[Resource("res://npcs/npc.gd")]([])
+
+[node name="Room14" type="Node" parent="."]
+script = ExtResource("20_6o70v")
+room_title = "Default room"
+room_description = "You're in a corridor that goes east/west"
+room_items = Array[Resource("res://npcs/npc.gd")]([])
+room_exits = Array[ExtResource("6_f78wp")]([SubResource("Resource_th7ee"), SubResource("Resource_6a3mq")])
+room_npcs = Array[Resource("res://npcs/npc.gd")]([])
+
+[node name="Room15" type="Node" parent="."]
+script = ExtResource("21_iqx6x")
+room_title = "Default room"
+room_description = "You're in a corridor that twists west and south. There is a door on the east side"
+room_items = Array[Resource("res://npcs/npc.gd")]([])
+room_exits = Array[ExtResource("6_f78wp")]([SubResource("Resource_u84bh"), SubResource("Resource_u0mmm"), SubResource("Resource_7pukl")])
+room_npcs = Array[Resource("res://npcs/npc.gd")]([])
+
+[node name="Room16" type="Node" parent="."]
+script = ExtResource("22_mif4u")
+room_title = "Default room"
+room_description = "You are in a kitchen, where a witch is stirring a strange mixture in a large cauldron. (The mixture is in the cauldron, not the witch)"
+room_items = Array[Resource("res://items/item.gd")]([ExtResource("23_5yfva"), ExtResource("24_ywjol")])
+room_exits = Array[ExtResource("6_f78wp")]([SubResource("Resource_0uywr"), SubResource("Resource_7ok42")])
+room_npcs = Array[Resource("res://npcs/npc.gd")]([])
+
+[node name="Room17" type="Node" parent="."]
+script = ExtResource("25_agrr2")
+room_title = "Default room"
+room_description = "You are in a north-south corridor. East of here lies a room labelled 'Developing Room'"
+room_items = Array[Resource("res://npcs/npc.gd")]([])
+room_exits = Array[ExtResource("6_f78wp")]([SubResource("Resource_oh8mo"), SubResource("Resource_tmo2v"), SubResource("Resource_nn1r1")])
+room_npcs = Array[Resource("res://npcs/npc.gd")]([])
+
+[node name="Room18" type="Node" parent="."]
+script = ExtResource("26_lxjnk")
+room_title = "Default room"
+room_description = "You are in a darkish room, illuminatedonly by a red glowing button"
+room_items = Array[Resource("res://npcs/npc.gd")]([])
+room_exits = Array[ExtResource("6_f78wp")]([SubResource("Resource_mnhmu"), SubResource("Resource_aoal1")])
+room_npcs = Array[Resource("res://npcs/npc.gd")]([])
+
+[node name="Room19" type="Node" parent="."]
+script = ExtResource("27_smxdu")
+room_title = "Default room"
+room_description = "You're in a passage that goes aroundthe corner, North and West. There is a doorway on the East."
+room_items = Array[Resource("res://npcs/npc.gd")]([])
+room_exits = Array[ExtResource("6_f78wp")]([SubResource("Resource_8grn4"), SubResource("Resource_ek1xg"), SubResource("Resource_4lclv")])
+room_npcs = Array[Resource("res://npcs/npc.gd")]([])
+
+[node name="Room20" type="Node" parent="."]
+script = ExtResource("28_yweq5")
+room_title = "Default room"
+room_description = "You are on the north section of a set which has been created as a ballroom, stretching out to the south. There is an western exit"
+room_items = Array[Resource("res://npcs/npc.gd")]([])
+room_exits = Array[Resource("res://npcs/npc.gd")]([])
+room_npcs = Array[Resource("res://npcs/npc.gd")]([])
+
+[node name="Room21" type="Node" parent="."]
+script = ExtResource("29_m743e")
+room_title = "Default room"
+room_description = "You're in the centre of a grand ballroom."
+room_items = Array[Resource("res://items/item.gd")]([ExtResource("30_vbnch")])
+room_exits = Array[Resource("res://npcs/npc.gd")]([])
+room_npcs = Array[Resource("res://npcs/npc.gd")]([])
+
+[node name="Room22" type="Node" parent="."]
+script = ExtResource("31_irt7m")
+room_title = "Default room"
+room_description = "You're on the south side of the ballroom set. There is a doorway south of here."
+room_items = Array[Resource("res://npcs/npc.gd")]([])
+room_exits = Array[Resource("res://npcs/npc.gd")]([])
+room_npcs = Array[Resource("res://npcs/npc.gd")]([])
+
+[node name="Room23" type="Node" parent="."]
+script = ExtResource("32_oqhlt")
+room_title = "Default room"
+room_description = "You are on another set, next to a tank of water, perhaps left there for some boating scene. The exit lies to the north"
+room_items = Array[Resource("res://npcs/npc.gd")]([])
+room_exits = Array[Resource("res://npcs/npc.gd")]([])
+room_npcs = Array[Resource("res://npcs/npc.gd")]([])
+
+[node name="Room24" type="Node" parent="."]
+script = ExtResource("33_m4rlm")
+room_title = "Default room"
+room_description = "You're in a tank of water. Because the water is so dirty it is hard to discern any details. The only exit is out!"
+room_items = Array[Resource("res://items/item.gd")]([ExtResource("34_nxqqs")])
+room_exits = Array[Resource("res://npcs/npc.gd")]([])
+room_npcs = Array[Resource("res://npcs/npc.gd")]([])
+
+[node name="Room25" type="Node" parent="."]
+script = ExtResource("35_kvtpb")
+room_title = "Stairs, middle"
+room_description = "You are now halfway up these somewhat rickety stairs. The wood is particularly rotten at this point."
+room_items = Array[Resource("res://npcs/npc.gd")]([])
+room_exits = Array[Resource("res://npcs/npc.gd")]([])
+room_npcs = Array[Resource("res://npcs/npc.gd")]([])
+
+[node name="Room26" type="Node" parent="."]
+script = ExtResource("36_8gfek")
+room_title = "Default room"
+room_description = "You are in the back yard. A southern doorway leads back into the building and a shed lies nearby"
+room_items = Array[Resource("res://npcs/npc.gd")]([])
+room_exits = Array[Resource("res://npcs/npc.gd")]([])
+room_npcs = Array[Resource("res://npcs/npc.gd")]([])
+
+[node name="Room27" type="Node" parent="."]
+script = ExtResource("37_1do2x")
+room_title = "Default room"
+room_description = "You are in a small shed. There is a large cardboard box here on the ground."
+room_items = Array[Resource("res://npcs/npc.gd")]([])
+room_exits = Array[Resource("res://npcs/npc.gd")]([])
+room_npcs = Array[Resource("res://npcs/npc.gd")]([])
+
+[node name="Room28" type="Node" parent="."]
+script = ExtResource("38_wes6u")
+room_title = "Default room"
+room_description = "You are on the landing above the stairs. A passage goes east-west and there is a door to the north."
+room_items = Array[Resource("res://npcs/npc.gd")]([])
+room_exits = Array[Resource("res://npcs/npc.gd")]([])
+room_npcs = Array[Resource("res://npcs/npc.gd")]([])
+
+[node name="Room29" type="Node" parent="."]
+script = ExtResource("39_p8qox")
+room_title = "Default room"
+room_description = "You're in a corridor. Directions are north and west"
+room_items = Array[Resource("res://npcs/npc.gd")]([])
+room_exits = Array[Resource("res://npcs/npc.gd")]([])
+room_npcs = Array[Resource("res://npcs/npc.gd")]([])
+
+[node name="Room30" type="Node" parent="."]
+script = ExtResource("40_ewftd")
+room_title = "Default room"
+room_description = "You are in a passage that goes north around a corner, south around a different corner or east into another corridor"
+room_items = Array[Resource("res://npcs/npc.gd")]([])
+room_exits = Array[Resource("res://npcs/npc.gd")]([])
+room_npcs = Array[Resource("res://npcs/npc.gd")]([])
+
+[node name="Room31" type="Node" parent="."]
+script = ExtResource("41_inv7a")
+room_title = "Default room"
+room_description = "You are in a corridor outside a room north and a room to the east A westerly passage leads back out"
+room_items = Array[Resource("res://npcs/npc.gd")]([])
+room_exits = Array[Resource("res://npcs/npc.gd")]([])
+room_npcs = Array[Resource("res://npcs/npc.gd")]([])
+
+[node name="Room32" type="Node" parent="."]
+script = ExtResource("42_d0506")
+room_title = "Default room"
+room_description = "You're in a dusty bedroom. A heavy carpet lies on the floor"
+room_items = Array[Resource("res://npcs/npc.gd")]([])
+room_exits = Array[Resource("res://npcs/npc.gd")]([])
+room_npcs = Array[Resource("res://npcs/npc.gd")]([])
+
+[node name="Room33" type="Node" parent="."]
+script = ExtResource("43_4k08e")
+room_title = "Default room"
+room_description = "You're in a keep-fit room. An exercisebike is fixed to the floor"
+room_items = Array[Resource("res://items/item.gd")]([ExtResource("44_e7orq")])
+room_exits = Array[Resource("res://npcs/npc.gd")]([])
+room_npcs = Array[Resource("res://npcs/npc.gd")]([])
+
+[node name="Room34" type="Node" parent="."]
+script = ExtResource("45_2xcbm")
+room_title = "Default room"
+room_description = "You're in a corridor that goes East and  south"
+room_items = Array[Resource("res://npcs/npc.gd")]([])
+room_exits = Array[Resource("res://npcs/npc.gd")]([])
+room_npcs = Array[Resource("res://npcs/npc.gd")]([])
+
+[node name="Room35" type="Node" parent="."]
+script = ExtResource("46_xl5xb")
+room_title = "Default room"
+room_description = "You're in a corner. Corridors go east and north. A stairway goes up"
+room_items = Array[Resource("res://npcs/npc.gd")]([])
+room_exits = Array[Resource("res://npcs/npc.gd")]([])
+room_npcs = Array[Resource("res://npcs/npc.gd")]([])
+
+[node name="Room36" type="Node" parent="."]
+script = ExtResource("47_ylsfr")
+room_title = "Default room"
+room_description = "You're in an old bedroom"
+room_items = Array[Resource("res://items/item.gd")]([ExtResource("48_b86ba")])
+room_exits = Array[Resource("res://npcs/npc.gd")]([])
+room_npcs = Array[Resource("res://npcs/npc.gd")]([])
+
+[node name="Room37" type="Node" parent="."]
+script = ExtResource("49_e4fdf")
+room_title = "Default room"
+room_description = "You're above the stairway in the southside of the attic"
+room_items = Array[Resource("res://npcs/npc.gd")]([])
+room_exits = Array[Resource("res://npcs/npc.gd")]([])
+room_npcs = Array[Resource("res://npcs/npc.gd")]([])
+
+[node name="Room38" type="Node" parent="."]
+script = ExtResource("50_ohmu6")
+room_title = "Default room"
+room_description = "You're in a north section of the atticA large mirror is on the east side."
+room_items = Array[Resource("res://npcs/npc.gd")]([])
+room_exits = Array[Resource("res://npcs/npc.gd")]([])
+room_npcs = Array[Resource("res://npcs/npc.gd")]([])
+
+[node name="Room39" type="Node" parent="."]
+script = ExtResource("51_243kt")
+room_title = "Default room"
+room_description = "You're in an odd room. There are the following: A red door in the north wall,a yellow door in the east wall, and a blue door to the south. An exit lies  west"
+room_items = Array[Resource("res://npcs/npc.gd")]([])
+room_exits = Array[Resource("res://npcs/npc.gd")]([])
+room_npcs = Array[Resource("res://npcs/npc.gd")]([])
+
+[node name="Room40" type="Node" parent="."]
+script = ExtResource("52_vhqfc")
+room_title = "Default room"
+room_description = "You are in another odd room, which has a blue door north, a white door south and a purple door east"
+room_items = Array[Resource("res://npcs/npc.gd")]([])
+room_exits = Array[Resource("res://npcs/npc.gd")]([])
+room_npcs = Array[Resource("res://npcs/npc.gd")]([])
+
+[node name="Room41" type="Node" parent="."]
+script = ExtResource("53_jf7kf")
+room_title = "Default room"
+room_description = "You're outside the building on a narrow ledge which starts here and goes east"
+room_items = Array[Resource("res://npcs/npc.gd")]([])
+room_exits = Array[Resource("res://npcs/npc.gd")]([])
+room_npcs = Array[Resource("res://npcs/npc.gd")]([])
+
+[node name="Room42" type="Node" parent="."]
+script = ExtResource("54_ii2qk")
+room_title = "Default room"
+room_description = "You are in an odd room. There is a black door to the north, a brown door to the south and a yellow door to the west"
+room_items = Array[Resource("res://items/item.gd")]([ExtResource("55_gs0bp")])
+room_exits = Array[Resource("res://npcs/npc.gd")]([])
+room_npcs = Array[Resource("res://npcs/npc.gd")]([])
+
+[node name="Room43" type="Node" parent="."]
+script = ExtResource("56_t8fw5")
+room_title = "Default room"
+room_description = "You're in an odd room. A brown door lies north and a red door goes west "
+room_items = Array[Resource("res://npcs/npc.gd")]([])
+room_exits = Array[Resource("res://npcs/npc.gd")]([])
+room_npcs = Array[Resource("res://npcs/npc.gd")]([])
+
+[node name="Room44" type="Node" parent="."]
+script = ExtResource("57_eii2i")
+room_title = "Default room"
+room_description = "You're in a small room which has a glassless window leading out to a narrow ledge"
+room_items = Array[Resource("res://items/item.gd")]([ExtResource("58_8gstb")])
+room_exits = Array[Resource("res://npcs/npc.gd")]([])
+room_npcs = Array[Resource("res://npcs/npc.gd")]([])
+
+[node name="Room45" type="Node" parent="."]
+script = ExtResource("59_6gfoq")
+room_title = "Default room"
+room_description = "You have fallen into a room with no apparent exits. Howevar, the walls don't look entirely solid...?"
+room_items = Array[Resource("res://npcs/npc.gd")]([])
+room_exits = Array[Resource("res://npcs/npc.gd")]([])
+room_npcs = Array[Resource("res://npcs/npc.gd")]([])
+
+[node name="Room46" type="Node" parent="."]
+script = ExtResource("60_r81w4")
+room_title = "Default room"
+room_description = "You are outside a large door. The onlyexits are west back to the exitless room and east through the    door"
+room_items = Array[Resource("res://items/item.gd")]([ExtResource("61_am7oi")])
+room_exits = Array[Resource("res://npcs/npc.gd")]([])
+room_npcs = Array[Resource("res://npcs/npc.gd")]([])
+
+[node name="Room47" type="Node" parent="."]
+script = ExtResource("62_p7i8j")
+room_title = "Default room"
+room_description = "You are in a high walled room which is quite damp in places. West is a large door, and a passage takes you   north"
+room_items = Array[Resource("res://items/item.gd")]([ExtResource("63_j34fv")])
+room_exits = Array[Resource("res://npcs/npc.gd")]([])
+room_npcs = Array[Resource("res://npcs/npc.gd")]([])
+
+[node name="Room48" type="Node" parent="."]
+script = ExtResource("64_tj5pr")
+room_title = "Default room"
+room_description = "You are in a small room with the odd bandage here and there."
+room_items = Array[Resource("res://items/item.gd")]([ExtResource("65_orrwn")])
+room_exits = Array[Resource("res://npcs/npc.gd")]([])
+room_npcs = Array[Resource("res://npcs/npc.gd")]([])
+
+[node name="Room49" type="Node" parent="."]
+script = ExtResource("66_stbqg")
+room_title = "Default room"
+room_description = "You are in a small room. A passage goes south and the exit lies north."
+room_items = Array[Resource("res://npcs/npc.gd")]([])
+room_exits = Array[Resource("res://npcs/npc.gd")]([])
+room_npcs = Array[Resource("res://npcs/npc.gd")]([])
+
+[node name="Room50" type="Node" parent="."]
+script = ExtResource("67_t70cr")
+room_title = "Default room"
+room_description = "You're in the crypt. There are passages going east and west"
+room_items = Array[Resource("res://npcs/npc.gd")]([])
+room_exits = Array[Resource("res://npcs/npc.gd")]([])
+room_npcs = Array[Resource("res://npcs/npc.gd")]([])
+
+[node name="Room51" type="Node" parent="."]
+script = ExtResource("68_igui2")
+room_title = "Default room"
+room_description = "You are in a passage that travels north or south. A small avenue goes east"
+room_items = Array[Resource("res://npcs/npc.gd")]([])
+room_exits = Array[Resource("res://npcs/npc.gd")]([])
+room_npcs = Array[Resource("res://npcs/npc.gd")]([])
+
+[node name="Room52" type="Node" parent="."]
+script = ExtResource("69_jjmc7")
+room_title = "Default room"
+room_description = "You are in an east/west alley"
+room_items = Array[Resource("res://npcs/npc.gd")]([])
+room_exits = Array[Resource("res://npcs/npc.gd")]([])
+room_npcs = Array[Resource("res://npcs/npc.gd")]([])
+
+[node name="Room53" type="Node" parent="."]
+script = ExtResource("70_0mjpx")
+room_title = "Default room"
+room_description = "You're in a large hairy room, where there is only a passage going west There is a chute on the east wall"
+room_items = Array[Resource("res://npcs/npc.gd")]([])
+room_exits = Array[Resource("res://npcs/npc.gd")]([])
+room_npcs = Array[Resource("res://npcs/npc.gd")]([])
+
+[node name="Room54" type="Node" parent="."]
+script = ExtResource("71_beu4h")
+room_title = "Default room"
+room_description = "You're in a large room with no exits. A button marked 'PANIC' is here The walls don't budge either!"
+room_items = Array[Resource("res://npcs/npc.gd")]([])
+room_exits = Array[Resource("res://npcs/npc.gd")]([])
+room_npcs = Array[Resource("res://npcs/npc.gd")]([])
+
+[node name="Room55" type="Node" parent="."]
+script = ExtResource("72_lr4kn")
+room_title = "Default room"
+room_description = "You are in a room which is being redecorated. A number has been written on the wall: ????? There is a safe imbedded in one wall The message 'somewhere over the rain- bow (There's no place like..) has been written on the wall"
+room_items = Array[Resource("res://npcs/npc.gd")]([])
+room_exits = Array[Resource("res://npcs/npc.gd")]([])
+room_npcs = Array[Resource("res://npcs/npc.gd")]([])
+
+[node name="Room56" type="Node" parent="."]
+script = ExtResource("73_n37dm")
+room_title = "Default room"
+room_description = "You are at the eastern extreme of the narrow ledge. A glassless window is in front of me"
+room_items = Array[Resource("res://npcs/npc.gd")]([])
+room_exits = Array[Resource("res://npcs/npc.gd")]([])
+room_npcs = Array[Resource("res://npcs/npc.gd")]([])
+
+[node name="Room57" type="Node" parent="."]
+script = ExtResource("74_jspdf")
+room_title = "Death"
+room_description = "You have gone to better place!"
+room_items = Array[Resource("res://npcs/npc.gd")]([])
+room_exits = Array[ExtResource("6_f78wp")]([SubResource("Resource_l02qs")])
+room_npcs = Array[Resource("res://npcs/npc.gd")]([])

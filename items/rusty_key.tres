@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Item" load_steps=2 format=3 uid="uid://cmnutfn0h6pxf"]
+
+[ext_resource type="Script" path="res://items/item.gd" id="1_l3wq7"]
+
+[resource]
+script = ExtResource("1_l3wq7")
+item_name = "Big rusty key"
+item_weight = 3
+pickable = true

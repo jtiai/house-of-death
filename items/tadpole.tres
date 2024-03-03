@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Item" load_steps=2 format=3 uid="uid://b43gors5eboma"]
+
+[ext_resource type="Script" path="res://items/item.gd" id="1_0vx0l"]
+
+[resource]
+script = ExtResource("1_0vx0l")
+item_name = "Tadpole"
+item_weight = 10
+pickable = true

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Item" load_steps=2 format=3 uid="uid://dkus5q532rnoi"]
+
+[ext_resource type="Script" path="res://items/item.gd" id="1_tvv6s"]
+
+[resource]
+script = ExtResource("1_tvv6s")
+item_name = "There is a bell push"
+item_weight = 0
+pickable = false

@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="NPC" load_steps=2 format=3 uid="uid://bawtlcova7561"]
+
+[ext_resource type="Script" path="res://npcs/npc.gd" id="1_3ytjc"]
+
+[resource]
+script = ExtResource("1_3ytjc")
+npc_name = "Dracula"

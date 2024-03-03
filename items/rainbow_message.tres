@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Item" load_steps=2 format=3 uid="uid://dgm6jbgexur7d"]
+
+[ext_resource type="Script" path="res://items/item.gd" id="1_c8m7y"]
+
+[resource]
+script = ExtResource("1_c8m7y")
+item_name = "Somewhere over the rainbow."
+item_weight = 0
+pickable = false

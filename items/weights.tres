@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Item" load_steps=2 format=3 uid="uid://dbveusb2j2lop"]
+
+[ext_resource type="Script" path="res://items/item.gd" id="1_nnpu5"]
+
+[resource]
+script = ExtResource("1_nnpu5")
+item_name = "Weights"
+item_weight = 60
+pickable = true

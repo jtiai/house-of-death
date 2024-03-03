@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://b584q3a7p81qh"]
+
+[ext_resource type="Script" path="res://commands/command_manager.gd" id="1_pavh4"]
+[ext_resource type="Script" path="res://commands/go_command.gd" id="2_bvoox"]
+[ext_resource type="Script" path="res://commands/look_command.gd" id="3_j5co4"]
+
+[node name="CommandManager" type="Node"]
+script = ExtResource("1_pavh4")
+
+[node name="Go" type="Node" parent="."]
+script = ExtResource("2_bvoox")
+
+[node name="Look" type="Node" parent="."]
+script = ExtResource("3_j5co4")

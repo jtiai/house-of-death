@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Item" load_steps=2 format=3 uid="uid://bpli6sek5v8j4"]
+
+[ext_resource type="Script" path="res://items/item.gd" id="1_qewhr"]
+
+[resource]
+script = ExtResource("1_qewhr")
+item_name = "Phial of liquid"
+item_weight = 8
+pickable = true
