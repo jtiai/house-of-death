@@ -90,8 +90,8 @@ func print_information() -> void:
 
 
 func post_enter_room() -> void:
-	player.current_room.post_enter_room()
-	game_state = State.WAIT_FOR_INPUT	
+	player.current_room._on_enter()
+	game_state = State.WAIT_FOR_INPUT
 
 
 func run_daemon_jobs() -> void:

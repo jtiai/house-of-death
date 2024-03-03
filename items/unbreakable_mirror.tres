@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Item" load_steps=2 format=3 uid="uid://dx1u2e5ktmkqw"]
+
+[ext_resource type="Script" path="res://items/item.gd" id="1_6n0jb"]
+
+[resource]
+script = ExtResource("1_6n0jb")
+item_name = "Unbreakable mirror"
+item_description = "There is an ugly face staring back"
+item_weight = 0
+pickable = true

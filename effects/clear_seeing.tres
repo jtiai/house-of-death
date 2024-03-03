@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="Effect" load_steps=2 format=3 uid="uid://c30jhucqeumme"]
+
+[ext_resource type="Script" path="res://effects/effect.gd" id="1_wv57c"]
+
+[resource]
+script = ExtResource("1_wv57c")
+effect_name = "See clearly"

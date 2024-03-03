@@ -5,5 +5,6 @@
 [resource]
 script = ExtResource("1_l3wq7")
 item_name = "Big rusty key"
+item_description = "Key with a lot of rust."
 item_weight = 3
 pickable = true

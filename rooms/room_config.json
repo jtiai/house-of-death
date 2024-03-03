@@ -271,7 +271,9 @@
 		"exits": {
 			"north": 22
 		},
-		"items": [],
+		"items": [
+			"tank_full_of_water"
+		],
 		"npcs": []
 	},
 	{
@@ -379,7 +381,9 @@
 			"west": 31,
 			"out": 30
 		},
-		"items": [],
+		"items": [
+			"carpet"
+		],
 		"npcs": []
 	},
 	{
@@ -452,7 +456,9 @@
 			"south": 37,
 			"mirror": 39
 		},
-		"items": [],
+		"items": [
+			"unbreakable_mirror"
+		],
 		"npcs": []
 	},
 	{

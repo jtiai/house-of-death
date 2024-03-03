@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Item" load_steps=2 format=3 uid="uid://vmcu5a24d7ga"]
+
+[ext_resource type="Script" path="res://items/item.gd" id="1_kjh8n"]
+
+[resource]
+script = ExtResource("1_kjh8n")
+item_name = "Closed safe"
+item_description = "Closed safe. There is also code input pad."
+item_weight = 0
+pickable = false

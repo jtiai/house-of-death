@@ -5,5 +5,6 @@
 [resource]
 script = ExtResource("1_c8m7y")
 item_name = "Somewhere over the rainbow."
+item_description = "It really reads \"Somewhere over the rainbow.\""
 item_weight = 0
 pickable = false

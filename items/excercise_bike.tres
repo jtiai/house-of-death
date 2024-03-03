@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Item" load_steps=2 format=3 uid="uid://bfgqg3uya5tl3"]
+
+[ext_resource type="Script" path="res://items/item.gd" id="1_cehlt"]
+
+[resource]
+script = ExtResource("1_cehlt")
+item_name = "An excercise bike"
+item_description = "The bike is fixed to the ground, and  is strange in that it has a mileometer that doesn't change"
+item_weight = 0
+pickable = true

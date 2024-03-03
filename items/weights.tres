@@ -5,5 +5,6 @@
 [resource]
 script = ExtResource("1_nnpu5")
 item_name = "Weights"
+item_description = "The weights are very heavy"
 item_weight = 60
 pickable = true

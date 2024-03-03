@@ -5,3 +5,5 @@
 [resource]
 script = ExtResource("1_3ytjc")
 npc_name = "Dracula"
+npc_description = "The vampire has a strong resemblance to Vincent Price"
+stats = {}

@@ -22,7 +22,7 @@ var gm: GameManager = null
 func _ready() -> void:
 	# Adjust NPCs
 	for npc in room_npcs:
-		npc.current_room = self
+		npc.set_room(self)
 
 ## Command handler for verb and noun
 ## Returns false if command not handled, true otherwise

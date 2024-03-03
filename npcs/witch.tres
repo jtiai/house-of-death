@@ -5,3 +5,5 @@
 [resource]
 script = ExtResource("1_orboh")
 npc_name = "Witch"
+npc_description = "The witch is of the evil variety"
+stats = {}

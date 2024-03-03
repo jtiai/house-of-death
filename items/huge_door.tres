@@ -5,5 +5,6 @@
 [resource]
 script = ExtResource("1_8ppyq")
 item_name = "The huge door"
+item_description = "The door is really huge."
 item_weight = 0
 pickable = false

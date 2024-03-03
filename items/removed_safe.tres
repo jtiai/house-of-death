@@ -5,5 +5,6 @@
 [resource]
 script = ExtResource("1_4vqyy")
 item_name = "Sorry, safe removed during alterations"
+item_description = "Yes, there was safe once, wonder where it was taken..."
 item_weight = 0
 pickable = false

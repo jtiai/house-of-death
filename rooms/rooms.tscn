@@ -1,4 +1,4 @@
-[gd_scene load_steps=160 format=3 uid="uid://dx5k7na301wtm"]
+[gd_scene load_steps=182 format=3 uid="uid://dx5k7na301wtm"]
 
 [ext_resource type="Script" path="res://rooms/room_manager.gd" id="1_m75wr"]
 [ext_resource type="Script" path="res://rooms/room_01.gd" id="2_056n7"]
@@ -14,6 +14,28 @@
 [ext_resource type="Script" path="res://rooms/room_18.gd" id="11_163ne"]
 [ext_resource type="Script" path="res://rooms/room_21.gd" id="12_xoxls"]
 [ext_resource type="Script" path="res://rooms/room_23.gd" id="13_ipvr6"]
+[ext_resource type="Resource" uid="uid://drrpossi8rnje" path="res://items/tank_full_of_water.tres" id="14_qke66"]
+[ext_resource type="Script" path="res://rooms/room_24.gd" id="15_bqauf"]
+[ext_resource type="Script" path="res://rooms/room_27.gd" id="17_sv552"]
+[ext_resource type="Script" path="res://rooms/room_28.gd" id="18_2ebdh"]
+[ext_resource type="Script" path="res://rooms/room_32.gd" id="19_dfuuw"]
+[ext_resource type="Resource" uid="uid://b2iel01clqwtc" path="res://items/carpet.tres" id="20_spp4q"]
+[ext_resource type="Script" path="res://rooms/room_33.gd" id="21_755hg"]
+[ext_resource type="Script" path="res://rooms/room_38.gd" id="22_hxe1l"]
+[ext_resource type="Resource" uid="uid://dx1u2e5ktmkqw" path="res://items/unbreakable_mirror.tres" id="23_ttlcx"]
+[ext_resource type="Script" path="res://rooms/room_39.gd" id="24_lcsn2"]
+[ext_resource type="Script" path="res://rooms/room_40.gd" id="25_jac1g"]
+[ext_resource type="Script" path="res://rooms/room_44.gd" id="26_s8a1i"]
+[ext_resource type="Resource" uid="uid://cb043j8por8p6" path="res://items/portrait.tres" id="27_bbo5f"]
+[ext_resource type="Script" path="res://rooms/room_45.gd" id="28_gecks"]
+[ext_resource type="Script" path="res://rooms/room_46.gd" id="29_wfe4g"]
+[ext_resource type="Resource" uid="uid://q5l7cjkdjknt" path="res://items/huge_door.tres" id="30_8k7yb"]
+[ext_resource type="Script" path="res://rooms/room_49.gd" id="31_q0lkv"]
+[ext_resource type="Script" path="res://rooms/room_50.gd" id="32_khcwt"]
+[ext_resource type="Script" path="res://rooms/room_53.gd" id="33_xfnv2"]
+[ext_resource type="Script" path="res://rooms/room_54.gd" id="34_lids4"]
+[ext_resource type="Resource" uid="uid://vmcu5a24d7ga" path="res://items/closed_safe.tres" id="35_4bgt2"]
+[ext_resource type="Script" path="res://rooms/room_55.gd" id="36_s2i3a"]
 
 [sub_resource type="Resource" id="Resource_n3y5j"]
 script = ExtResource("6_phmq8")
@@ -749,7 +771,6 @@ room_title = "Outside building"
 room_description = "You are outside a tall gloomy building. There is a door here, to the north"
 room_items = Array[Resource("res://items/item.gd")]([ExtResource("3_6siwh"), ExtResource("4_4aq5i"), ExtResource("5_v754j")])
 room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_n3y5j"), SubResource("Resource_hjpga"), SubResource("Resource_to3v4"), SubResource("Resource_tc6dn")])
-room_npcs = null
 
 [node name="Room02" type="Node" parent="."]
 script = ExtResource("7_peixe")
@@ -869,10 +890,11 @@ room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_g3185"), SubRe
 script = ExtResource("13_ipvr6")
 room_title = "Tank of water"
 room_description = "You are on another set, next to a tank of water, perhaps left there for some boating scene. The exit lies to the north."
+room_items = Array[Resource("res://items/item.gd")]([ExtResource("14_qke66")])
 room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_p8hav")])
 
 [node name="Room24" type="Node" parent="."]
-script = ExtResource("7_4busx")
+script = ExtResource("15_bqauf")
 room_title = "In the tank"
 room_description = "You're in a tank of water. Because the water is so dirty it is hard to discern any details. The only exit is out!"
 room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_21r7y"), SubResource("Resource_u07hg")])
@@ -890,13 +912,13 @@ room_description = "You are in the back yard. A southern doorway leads back into
 room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_0040t"), SubResource("Resource_kbra1"), SubResource("Resource_56nxf")])
 
 [node name="Room27" type="Node" parent="."]
-script = ExtResource("7_4busx")
+script = ExtResource("17_sv552")
 room_title = "Small shed"
 room_description = "You are in a small shed. There is a large cardboard box here on the ground."
 room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_0qmsx"), SubResource("Resource_p10s3")])
 
 [node name="Room28" type="Node" parent="."]
-script = ExtResource("7_4busx")
+script = ExtResource("18_2ebdh")
 room_title = "Landing above stairs"
 room_description = "You are on the landing above the stairs. A passage goes east-west and there is a door to the north."
 room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_umsol"), SubResource("Resource_biick"), SubResource("Resource_dxwnp"), SubResource("Resource_8cl3d"), SubResource("Resource_iotmk")])
@@ -920,13 +942,14 @@ room_description = "You are in a corridor outside a room north and a room to the
 room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_ykhlt"), SubResource("Resource_v54uu"), SubResource("Resource_xfw2r")])
 
 [node name="Room32" type="Node" parent="."]
-script = ExtResource("7_4busx")
+script = ExtResource("19_dfuuw")
 room_title = "Dusty bedroom"
 room_description = "You're in a dusty bedroom. A heavy carpet lies on the floor."
+room_items = Array[Resource("res://items/item.gd")]([ExtResource("20_spp4q")])
 room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_hua3g"), SubResource("Resource_rt5g2")])
 
 [node name="Room33" type="Node" parent="."]
-script = ExtResource("7_4busx")
+script = ExtResource("21_755hg")
 room_title = "Keep-fit room"
 room_description = "You're in a keep-fit room. An exercisebike is fixed to the floor."
 room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_xtejn"), SubResource("Resource_5kc3s")])
@@ -956,19 +979,20 @@ room_description = "You're above the stairway in the southside of the attic."
 room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_0jdgh"), SubResource("Resource_e5t5i"), SubResource("Resource_mornd")])
 
 [node name="Room38" type="Node" parent="."]
-script = ExtResource("7_4busx")
+script = ExtResource("22_hxe1l")
 room_title = "North of attic"
 room_description = "You're in a north section of the attic. A large mirror is on the east side."
+room_items = Array[Resource("res://items/item.gd")]([ExtResource("23_ttlcx")])
 room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_ccsvo"), SubResource("Resource_gybd4")])
 
 [node name="Room39" type="Node" parent="."]
-script = ExtResource("7_4busx")
+script = ExtResource("24_lcsn2")
 room_title = "Odd room 1"
 room_description = "You're in an odd room. There are the following: A red door in the north wall,a yellow door in the east wall, and a blue door to the south. An exit lies west."
 room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_x3rr4"), SubResource("Resource_6uwwq"), SubResource("Resource_3fgan"), SubResource("Resource_51jea")])
 
 [node name="Room40" type="Node" parent="."]
-script = ExtResource("7_4busx")
+script = ExtResource("25_jac1g")
 room_title = "Odd room 2"
 room_description = "You are in another odd room, which hasa blue door north, a white door south and a purple door east."
 room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_frgxj"), SubResource("Resource_s3so7"), SubResource("Resource_mr2hx")])
@@ -992,20 +1016,22 @@ room_description = "You're in an odd room. A brown door lies north and a red doo
 room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_hglp3"), SubResource("Resource_hfgis")])
 
 [node name="Room44" type="Node" parent="."]
-script = ExtResource("7_4busx")
+script = ExtResource("26_s8a1i")
 room_title = "Small room"
 room_description = "You're in a small room which has a glassless window leading out to a narrow ledge."
+room_items = Array[Resource("res://items/item.gd")]([ExtResource("27_bbo5f")])
 room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_vc4yp"), SubResource("Resource_qlgcw")])
 
 [node name="Room45" type="Node" parent="."]
-script = ExtResource("7_4busx")
+script = ExtResource("28_gecks")
 room_title = "Room w/o exits"
 room_description = "You have fallen into a room with no apparent exits. Howevar, the walls don't look entirely solid...?"
 
 [node name="Room46" type="Node" parent="."]
-script = ExtResource("7_4busx")
+script = ExtResource("29_wfe4g")
 room_title = "Outside large door"
 room_description = "You are outside a large door. The onlyexits are west back to the exitless room and east through the door."
+room_items = Array[Resource("res://items/item.gd")]([ExtResource("30_8k7yb")])
 room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_7j47q"), SubResource("Resource_a7c1g"), SubResource("Resource_ttuna")])
 
 [node name="Room47" type="Node" parent="."]
@@ -1021,13 +1047,13 @@ room_description = "You are in a small room with the odd bandage here and there.
 room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_rx7un"), SubResource("Resource_o7f0m")])
 
 [node name="Room49" type="Node" parent="."]
-script = ExtResource("7_4busx")
+script = ExtResource("31_q0lkv")
 room_title = "Small room 2"
 room_description = "You are in a small room. A passage goes south and the exit lies north."
 room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_6g6dx"), SubResource("Resource_3rcuo"), SubResource("Resource_1piv7")])
 
 [node name="Room50" type="Node" parent="."]
-script = ExtResource("7_4busx")
+script = ExtResource("32_khcwt")
 room_title = "Crypt"
 room_description = "You're in the crypt. There are pass- ages going east and west."
 room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_hdhra"), SubResource("Resource_ard2q")])
@@ -1045,18 +1071,19 @@ room_description = "You are in an east/west alley."
 room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_dk6b6"), SubResource("Resource_tj50b")])
 
 [node name="Room53" type="Node" parent="."]
-script = ExtResource("7_4busx")
+script = ExtResource("33_xfnv2")
 room_title = "Large hairy room"
 room_description = "You're in a large hairy room, where there is only a passage going west There is a chute on the east wall."
 room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_xynfv"), SubResource("Resource_rcguy"), SubResource("Resource_vgsn8")])
 
 [node name="Room54" type="Node" parent="."]
-script = ExtResource("7_4busx")
+script = ExtResource("34_lids4")
 room_title = "Large room with PANIC"
 room_description = "You're in a large room with no exits. A button marked 'PANIC' is here The walls don't budge either!"
+room_items = Array[Resource("res://items/item.gd")]([ExtResource("35_4bgt2")])
 
 [node name="Room55" type="Node" parent="."]
-script = ExtResource("7_4busx")
+script = ExtResource("36_s2i3a")
 room_title = "Redecorated room"
 room_description = "You are in a room which is being re- decorated. A number has been written on the wall: ????? There is a safe imbedded in one wall The message 'somewhere over the rain- bow (There's no place like..) has been written on the wall."
 room_exits = Array[ExtResource("6_phmq8")]([SubResource("Resource_qqqdy"), SubResource("Resource_4yf7q"), SubResource("Resource_um3rq")])

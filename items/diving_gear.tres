@@ -5,5 +5,6 @@
 [resource]
 script = ExtResource("1_8jhxk")
 item_name = "Diving gear"
+item_description = "A gear for diving."
 item_weight = 25
 pickable = true

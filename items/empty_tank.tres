@@ -5,5 +5,6 @@
 [resource]
 script = ExtResource("1_0k7m1")
 item_name = "Empty tank"
+item_description = "The tank is empty."
 item_weight = 0
 pickable = false

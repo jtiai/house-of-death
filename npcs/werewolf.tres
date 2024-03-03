@@ -5,3 +5,5 @@
 [resource]
 script = ExtResource("1_5bube")
 npc_name = "Werewolf"
+npc_description = "The werewolf is large, furry but not in the least cute"
+stats = {}
